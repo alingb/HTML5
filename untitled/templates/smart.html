@@ -1,0 +1,12 @@
+{% extends "detail.html" %}
+{% block head %}
+    <div id="header"><h1>主板详细信息</h1></div>
+{% endblock %}
+{% block table %}
+    <tr>
+        <th colspan="1">SMART INFO</th>
+        <td colspan="3">
+            <pre>{{ all.smart_info }}</pre>
+        </td>
+    </tr>
+{% endblock %}

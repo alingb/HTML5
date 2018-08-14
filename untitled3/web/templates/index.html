@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<br lang="en" xmlns="http://www.w3.org/1999/html">
+<style>
+    #h1{
+        text-align: center;
+        background-color: #231ab0;
+        padding: 5px;
+        border-radius:5px;
+    }
+
+    td,th {
+        color: green;
+        text-align: center;
+    }
+
+    #header {
+        color: black;
+        padding: 5px;
+        text-align: left;
+        border-radius:5px;
+    }
+    #header span{
+        text-align: center;
+        color: black;
+        background-color: #455fff;
+        width: 50px;
+        height: 50px;
+        border-radius:5px;
+    }
+    #center {
+        text-align: center;
+        padding: 5px;
+        background-color: #c8c8c8;
+        color: #000000;
+        border-radius:5px;
+        font-size: 20px;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+        <title>index</title>
+        <h1 id="h1">{{ name }}</h1>
+    {% endblock %}
+
+</head>
+<body>
+
+<div id="header">
+{% block title_link %}
+{% endblock %}
+</div>
+
+
+<div id="center">
+{% block msg %}
+    {% for m in msg %}
+        <th>{{  }}</th>
+    {% endfor %}
+{% endblock %}
+</div>
+</body>

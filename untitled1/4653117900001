@@ -1,0 +1,84 @@
+NAME:  Hermes S2212 V4
+FAMILY:  Default string
+CHECK STAT:
+    no check data
+SN:
+    4653117900001
+SN1:
+    4640917800013
+TIME:
+    2018-05-29 16:57
+BOOT TIME:
+    2018-05-29 15:49
+
+BIOS TIME:
+    Tue 29 May 2018 04:57:02 PM CST  -0.173344 seconds
+
+CPU:
+    E5-4628L v4 @ 1.80GHz  (2)
+MEMORY INFO:
+    16384 MB  (4)
+DISK INFO:
+    INTEL SSDSC2BB150G7  (1)
+RAID INFO:
+    
+NETWORK INFO:
+    Ethernet Controller X710 for 10GbE SFP+  (4)
+	I350 Gigabit Network Connection  (2)
+MAC INFO:
+    eno1:    fc:45:96:f2:b5:16
+	eno2:    fc:45:96:f2:b5:17
+	ens10f0:    68:91:d0:62:24:56
+	ens10f1:    68:91:d0:62:24:57
+	ens10f2:    68:91:d0:62:24:58
+	ens10f3:    68:91:d0:62:24:59
+BIOS VERSION:
+    3.38
+BMC VERSION:
+    3.33
+PCIE INFO:
+02:00.0 Ethernet controller: Intel Corporation I350 Gigabit Network Connection (rev 01)
+02:00.1 Ethernet controller: Intel Corporation I350 Gigabit Network Connection (rev 01)
+80:00.0 PCI bridge: Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D PCI Express Root Port 0 (rev 01)
+
+FRU INFO:
+FRU Device Description : Builtin FRU Device (ID 0)
+ Chassis Type          : Main Server Chassis
+ Chassis Part Number   : AAHB0010008   
+ Chassis Serial        : 4653117900001         
+ Board Mfg Date        : Thu Aug 17 14:34:00 2017
+ Board Mfg             : Compal
+ Board Product         : AAHA0B0    
+ Board Serial          : 4640917800013          
+ Board Part Number     : 4519XG38L01
+ Product Manufacturer  : AAHA0B0             
+ Product Name          : Hermes S2212 V4     
+ Product Part Number   : AAHB0010008         
+ Product Version       : 01234567            
+ Product Serial        : 4653117900001       
+ Product Asset Tag     : 01234567            
+ Product Extra         : 4F7003CDC3AE437E9E2FA903AA75BF91
+
+LOCATE DISK:
+[5:0:0:0]    disk    ATA      INTEL SSDSC2BB15 0121  /dev/sdb 
+
+LOCATE MEMORY:
+NODE 1	||	CPU1_DIMM_A1	||	16384 MB	||	2133 MHz	||	2133 MHz	||	Samsung
+NODE 1	||	CPU1_DIMM_A2	||	No Module Installed	||	Unknown	||	Unknown	||	NO DIMM
+NODE 1	||	CPU1_DIMM_B1	||	16384 MB	||	2133 MHz	||	2133 MHz	||	Samsung
+NODE 1	||	CPU1_DIMM_B2	||	No Module Installed	||	Unknown	||	Unknown	||	NO DIMM
+NODE 2	||	CPU1_DIMM_C1	||	No Module Installed	||	Unknown	||	Unknown	||	NO DIMM
+NODE 2	||	CPU1_DIMM_C2	||	No Module Installed	||	Unknown	||	Unknown	||	NO DIMM
+NODE 2	||	CPU1_DIMM_D1	||	No Module Installed	||	Unknown	||	Unknown	||	NO DIMM
+NODE 2	||	CPU1_DIMM_D2	||	No Module Installed	||	Unknown	||	Unknown	||	NO DIMM
+NODE 3	||	CPU2_DIMM_E1	||	16384 MB	||	2133 MHz	||	2133 MHz	||	Samsung
+NODE 3	||	CPU2_DIMM_E2	||	No Module Installed	||	Unknown	||	Unknown	||	NO DIMM
+NODE 3	||	CPU2_DIMM_F1	||	16384 MB	||	2133 MHz	||	2133 MHz	||	Samsung
+NODE 3	||	CPU2_DIMM_F2	||	No Module Installed	||	Unknown	||	Unknown	||	NO DIMM
+NODE 4	||	CPU2_DIMM_G1	||	No Module Installed	||	Unknown	||	Unknown	||	NO DIMM
+NODE 4	||	CPU2_DIMM_G2	||	No Module Installed	||	Unknown	||	Unknown	||	NO DIMM
+NODE 4	||	CPU2_DIMM_H1	||	No Module Installed	||	Unknown	||	Unknown	||	NO DIMM
+NODE 4	||	CPU2_DIMM_H2	||	No Module Installed	||	Unknown	||	Unknown	||	NO DIMM
+IP:	 192.168.1.191
+POWER: 2018-05-29 16:57:56
+DISK_SN: 

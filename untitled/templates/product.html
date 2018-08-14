@@ -1,0 +1,22 @@
+{% extends "index.html" %}
+{% block title %}
+    <h1 id="h1">{{ msg.name }}</h1>
+{% endblock %}
+{% block title_link %}
+    <div id="header" align="center">
+    <span><a href="/product">设备信息</a></span>
+    <span><a href="detail">详细信息</a></span>
+    </div>
+{% endblock %}
+{% block msg %}
+    <table border="5" width="80%" align="center" style="font-size:14px;word-break:break-all; word-wrap:break-word;">
+        <thead>
+        <th>SN</th>
+        <th>运行状态</th>
+        <th>运行时间</th>
+        </thead>
+        <td>123456</td>
+        <td>123456</td>
+        <td>123456</td>
+    </table>
+{% endblock %}

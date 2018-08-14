@@ -1,0 +1,105 @@
+   li {
+        list-style-type: none;
+        margin: 5px 5px 5px 5px;
+    }
+
+    li:nth-of-type(odd) {
+        background: #2aabd2;
+        border-radius:5px;
+    }
+
+    li:nth-of-type(even) {
+        background: #007aff;
+        border-radius:5px;
+    }
+    button {
+        font-size: 15px;
+        background: #007aff;
+        border-radius: 10px;
+    }
+
+    th {
+        color: green;
+        text-align: left;
+        padding:0px 10px;
+        width:150px;
+    }
+
+    td {
+        color: green;
+        text-align: left;
+        padding:0px 20px;
+    }
+    pre {
+        //padding:0px 20px;
+    }
+
+    table{
+            border-radius:5px;
+        }
+
+    a {
+        text-decoration: none;
+        font-size: 10px;
+    }
+
+    body {
+        background-color: gainsboro;
+    }
+
+    pre {
+        font-size: 14px;
+    }
+
+    .body span {
+        color: red;
+        font-size: 15px
+    }
+
+    .left span {
+        color: red;
+        font-size: 15px
+    }
+
+    #header {
+        background-color: blue;
+        color: white;
+        text-align: center;
+        padding: 5px;
+        border-radius:5px;
+    }
+    #link {
+        background-color: #428bca;
+        color: black;
+        text-align: left;
+        padding: 5px;
+        border-radius:5px;
+    }
+
+    #nav {
+        font-size: 20px;
+        line-height: 50px;
+        background-color: #2b669a;
+        height: 600px;
+        width: 100px;
+        float: left;
+        padding: 10px;
+        border-radius:5px;
+    }
+    #section {
+        width: 730px;
+        float: right;
+        padding: 5px;
+    }
+    #left {
+        width: 700px;
+        float: right;
+    }
+
+    #footer {
+        background-color: black;
+        color: white;
+        clear: both;
+        text-align: center;
+        padding: 5px;
+    }

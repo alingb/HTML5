@@ -1,0 +1,42 @@
+{% extends "detail.html" %}
+{% block head %}
+    <div id="header"><h1>主板详细信息</h1></div>
+{% endblock %}
+{% block table %}
+    <tr>
+        <th>SN</th>
+        <td>
+            <pre>{{ form.SN }}</pre>
+        </td>
+    </tr>
+    <tr>
+        <th>SN1</th>
+        <td>
+            <pre>{{ form.SN1 }}</pre>
+        </td>
+    </tr>
+    <tr>
+        <th>NAME</th>
+        <td>
+            <pre>{{ form.NAME }}</pre>
+        </td>
+    </tr>
+    <tr>
+        <th>FAMILY</th>
+        <td>
+            <pre>{{ form.FAMILY }}{{ form.FIMILY }}</pre>
+        </td>
+    </tr>
+    <tr>
+        <th>BIOS VERSION</th>
+        <td>
+            <pre>{{ form.BIOS_VERSION }}</pre>
+        </td>
+    </tr>
+    <tr>
+            <th>PCIE</th>
+        <td>
+            <pre>{{ form.PCIE_INFO }}</pre>
+        </td>
+    </tr>
+{% endblock %}

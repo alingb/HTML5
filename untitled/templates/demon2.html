@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <div class="left">
+        Welcome, {{ user }} <a href="/logout">logout</a>
+    </div>
+    <meta http-equiv="refresh" content="240" charset=UTF-8>
+
+    <br/>
+    <h4>服务器运行状态
+        <br/>[&nbsp;&nbsp;&nbsp;服务器连接数量:&nbsp; {{ count }}&nbsp;&nbsp;&nbsp;]
+        <br/>[{{ dic|upper }}]
+    </h4>
+    <h4 id="time1" style="color: blueviolet;" align="center"></h4>
+    <script>
+        function mytime() {
+            var a = new Date();
+            var b = a.toLocaleTimeString();
+            var c = a.toLocaleDateString();
+            document.getElementById("time1").innerHTML = c + "&nbsp" + b;
+        }
+
+        setInterval(function () {
+            mytime()
+        }, 10);
+    </script>
+    <title>
+        status
+    </title>
+</head>
+<body>
+<table width="95%" class="table table-hover" align="center" style=" word-break:break-all;">
+    <tr>
+        <div class="left">
+            <button onclick="window.open('/')">index</button>
+        </div>
+        <div class="left">
+            <button onclick="window.open('/technology/web/host/')">老化测试系统</button>
+        </div>
+        <div class="right">
+            <button onclick="window.open('/bugsystem/')">Debug提交</button>
+        </div>
+        <div class="right">
+            <button onclick="window.open('/technology/technology/error/')">Debug系统</button>
+        </div>
+        <div class="left">
+            <button onclick="window.open('/technology/web/hostcheck/')">近期服务器信息</button>
+        </div>
+    </tr>
+    <thead>
+    <tr>
+        <th>
+            <h5>ID</h5>
+        </th>
+        <th>
+            <h5>IP</h5>
+        </th>
+        <th>
+            <h5>hostname</h5>
+        </th>
+        <th>
+            <h5>sn</h5>
+        </th>
+        <th>
+            <h5>status</h5>
+        </th>
+        <th>
+            <h5>CPU</h5>
+        </th>
+        <th>
+            <h5>MEM</h5>
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for i in form %}
+        <tr>
+            <td><pre>{{ i.num }}</pre></td>
+            <td><pre>{{ i.ip }}</pre></td>
+            <td><pre>{{ i.hostname }}</pre></td>
+            <td><pre>{{ i.sn }}</pre></td>
+            {% if i.status == "stop" or  i.status == "erro" or  i.status == "system halted" %}
+                <td><h3><span style="color: red; "><pre>{{ i.status|upper }}</pre></span></h3></td>
+            {% elif i.status == "running" %}
+                <td><span style="color: blue; "><pre>{{ i.status }}</pre></span></td>
+            {% elif i.status == "reload" or i.status == "wait" or i.status == "check" %}
+                <td><span style="color: green;"><pre>{{ i.status }}</pre></span></td>
+            {% else %}
+                <td><span style="font-size:16px;color: #FF0000; "><pre>{{ i.status|upper }}</pre></span></td>
+            {% endif %}
+            <td><pre>{{ i.cpu }}</pre></td>
+            <td><pre>{{ i.mem }}</pre></td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

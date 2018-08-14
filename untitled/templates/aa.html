@@ -1,0 +1,58 @@
+<!--外间距和内间距-->
+<!DOCTYPE html>
+
+<html>
+<style type="text/css">
+    td {
+        padding: 0px 50px;
+    }
+</style>
+
+	<head>
+    	<meta charset="utf-8">
+    	<title>外间距</title>
+        <base target="_self">
+    </head>
+<body>
+    	<table border="1" width="300px" height="100px">
+        	<tr>
+            	<td>北京</td>
+                <td>上海</td>
+            </tr>
+            <tr>
+            	<td>深圳</td>
+                <td>广州</td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!--调整单元格与单元格之间的外间距（cellspacing="10px"意思是单元格与单元格之间的外间距是10个像素格）（对比第一张图和第二张图）-->
+        <table border="1" width="300px" height="100px" cellspacing="25px">
+        	<tr>
+            	<td>北京</td>
+                <td>上海</td>
+            </tr>
+            <tr>
+            	<td>深圳</td>
+                <td>广州</td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!--调整字体与单元格边框之间的内间距，（cellpadding="11px"意思是字体与单元格边框之间的距离是11个像素格）（对比第一张图和第三张图）-->
+        <table border="1" width="300px" height="100px" cellpadding="10px 10px">
+        	<tr>
+            	<td>北京</td>
+                <td>上海</td>
+            </tr>
+            <tr>
+            	<td>深圳</td>
+                <td>广州</td>
+            </tr>
+        </table>
+    </body>
+</html>

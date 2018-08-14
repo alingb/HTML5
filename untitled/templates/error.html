@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=UTF-8>
+    <script>
+        function mytime() {
+            var a = new Date();
+            var b = a.toLocaleTimeString();
+            var c = a.toLocaleDateString();
+            document.getElementById("time1").innerHTML = c + "&nbsp" + b;
+        }
+
+        setInterval(function () {
+            mytime()
+        }, 10);
+    </script>
+    <script>
+        function num() {
+            var Num = "";
+                for (var i = 0; i < 6; i++) {
+                Num += Math.floor(Math.random() * 10);
+            }
+            document.getElementById("bh").innerText = Num;
+        }
+
+        setInterval(function () {
+            num()
+        });
+    </script>
+    <script>
+        function change(id, id2) {
+            var a = document.getElementById(id).value;
+            if (a !== 'other') {
+                document.getElementById(id).hidden = false;
+                document.getElementById(id2).hidden = 'disabled';
+            }
+            else {
+                document.getElementById(id2).hidden = false;
+                document.getElementById(id).hidden = 'disabled';
+            }
+        }
+    </script>
+    <style type="text/css">
+        button {
+            font-size: 15px;
+            background: #007aff;
+            border-radius: 10px;
+        }
+
+        .left {
+            float: left
+        }
+
+        .body {
+            text-align: center
+        }
+
+        .right {
+            float: right
+        }
+
+        td {
+            color: green
+        }
+
+        .body span {
+            color: red;
+            font-size: 15px
+        }
+
+        .left span {
+            color: red;
+            font-size: 15px
+        }
+    </style>
+    <title>
+        故障记录
+    </title>
+    <div>
+        Welcome, root <a href="/logout">logout</a>
+    </div>
+    <h1 align="center">故障汇总提交</h1>
+    <h3 id="time1" style="color: blueviolet;" class="body"></h3>
+    <div class="left">
+        <button onclick="window.open('http://192.168.1.57/')">index</button>
+    </div>
+    <div class="left">
+        <button onclick="window.open('http://192.168.1.57/technology/web/host/')">老化测试系统</button>
+    </div>
+    <div class="right">
+        <button onclick="window.open('http://192.168.1.57/bugsystem/')">Debug提交</button>
+    </div>
+    <div class="right">
+        <button onclick="window.open('http://192.168.1.57/technology/technology/error/')">Debug系统</button>
+    </div>
+    <div class="left">
+        <button onclick="window.open('http://192.168.1.57/technology/web/hostcheck/')">近期服务器信息</button>
+    </div>
+
+
+</head>
+<body bgcolor="Gainsboro">
+<form action="/bugsystem/" name=form1 method="post" enctype="multipart/form-data">
+    <table width="85%" border="0" style="font-size:25px">
+        <tbody>
+        <tr>
+            <td class="body">BUG编号:</td>
+            <td><label>
+                <input type="text" name="num" value="935991" readonly>
+            </label>
+            </td>
+        </tr>
+        <tr>
+            <td class="body">
+                <div class="fieldWrapper">
+                    <span></span>
+                    <label> 抄送人员:</label>
+                </div>
+            </td>
+            <td>
+                <label for="id_email"></label><input id="id_email" maxlength="500" name="email" type="text"/>
+            </td>
+            <td class="body">
+                <div class="fieldWrapper">
+                    <span> </span>
+                    <label> 产品名称:</label>
+                </div>
+            </td>
+            <td>
+                <label for="id_product_name"></label><select id="id_product_name" name="product_name"
+                                                             onclick="change('id_product_name', 'id_product_name_other')">
+                    <option value="" selected="selected">---------</option>
+                    <option value="ASR1100">华硕ASR1100</option>
+                    <option value="K880G3">英业达K880G3</option>
+                    <option value="ASD2550">华硕ASD2550</option>
+                    <option value="RS720Q-E8">华硕RS720Q-E8</option>
+                    <option value="RS300-E9-PS4">华硕RS300-E9-PS4</option>
+                    <option value="ASR2612">华硕ASR2612</option>
+                    <option value="D51B-2U">广达D51B-2U</option>
+                    <option value="T41S-2U">广达T41S-2U</option>
+                    <option value="RS300-E9-PS4">华硕RS300-E9-PS4</option>
+                    <option value="RS520-E8-RS8">华硕RS520-E8-RS8</option>
+                    <option value="S210-X22RQ">广达S210-X22RQ</option>
+                    <option value="ESC4000G3">华硕ESC4000G3</option>
+                    <option value="RS520-E8-RS12">华硕RS520-E8-RS12</option>
+                    <option value="other">其他</option>
+                </select>
+                <input id="id_product_name_other" maxlength="500" name="product_name_other"
+                       placeholder="其他产品名称" type="text" hidden/>
+            </td>
+        </tr>
+        <tr>
+            <td class="body">
+                <div class="fieldWrapper">
+                    <span></span>
+                    <label> bug负责人:</label>
+                </div>
+            </td>
+            <td>
+                <span> <label for="id_bug_person"></label><input id="id_bug_person" maxlength="500" name="bug_person"
+                                                                 type="text"/></span>
+            </td>
+            <td class="body">
+                <div class="fieldWrapper">
+                    <span></span>
+                    <label>项目名称: </label>
+                </div>
+            </td>
+            <td>
+                <label for="id_project_name"></label><select id="id_project_name" name="project_name"
+                                                             onclick="change('id_project_name', 'id_project_name_other')">
+                    <option value="" selected="selected">---------</option>
+                    <option value="ELOG">锐捷ELOG</option>
+                    <option value="RG-RCP">锐捷RG-RCP</option>
+                    <option value="RCD6000-Office">锐捷RCD6000-Office</option>
+                    <option value="RCD6000-Main">锐捷RCD6000-Main</option>
+                    <option value="RG-SE04">锐捷RG-SE04</option>
+                    <option value="RG-ONC-AIO-CTL">锐捷RG-ONC-AIO-CTL</option>
+                    <option value="RG-RCM1000-Office">锐捷RG-RCM1000-Office</option>
+                    <option value="RG-RCM1000-Edu">锐捷RG-RCM1000-Edu</option>
+                    <option value="RG-RCM1000-Smart">锐捷RG-RCM1000-Smart</option>
+                    <option value="MDBE">美电贝尔</option>
+                    <option value="ZJCC">广东紫晶存储</option>
+                    <option value="UDS1022-G">锐捷UDS1022-G</option>
+                    <option value="UDS1022-G1">锐捷UDS1022-G1</option>
+                    <option value="UDS2000-C">锐捷UDS2000-C</option>
+                    <option value="UDS2000-E">锐捷UDS2000-E</option>
+                    <option value="UDS2000-E1">锐捷UDS2000-E1</option>
+                    <option value="RG-CES">锐捷RG-CES</option>
+                    <option value="RG-CPV-M">锐捷RG-CPV-M</option>
+                    <option value="RG-CPV-S">锐捷RG-CPV-S</option>
+                    <option value="2513(M1)">三盟2513(M1)</option>
+                    <option value="2513(M3)">三盟2513(M3)</option>
+                    <option value="2513(VM3)">三盟2513(VM3)</option>
+                    <option value="ASERVER-2400">深信服ASERVER-2400</option>
+                    <option value="ASERVER-2405">深信服ASERVER-2405</option>
+                    <option value="VDS-5050">深信服VDS-5050</option>
+                    <option value="VDS-6550">深信服VDS-6550</option>
+                    <option value="VDS-8050">深信服VDS-8050</option>
+                    <option value="VDS-G680">深信服VDS-G680</option>
+                    <option value="other">其他</option>
+                </select>
+                <input id="id_project_name_other" maxlength="500" name="project_name_other"
+                       placeholder="其他项目名称" type="text" hidden/>
+            </td>
+        </tr>
+        <tr>
+            <td class="body">
+                <div class="fieldWrapper">
+                    <span> </span>
+                    <label>BUG等级:</label>
+                </div>
+            </td>
+            <td>
+                <label for="id_bug_level"></label><select id="id_bug_level" name="bug_level">
+                    <option value="" selected="selected">---------</option>
+                    <option value="1">一般</option>
+                    <option value="2">严重</option>
+                    <option value="3">非常严重</option>
+                </select>
+            </td>
+            <td class="body">
+                <div class="fieldWrapper">
+                    <span> </span>
+                    <label>客户名称:</label>
+                </div>
+            </td>
+            <td type="time">
+                <label for="id_customer_name"></label><select id="id_customer_name" name="customer_name"
+                                                              onclick="change('id_customer_name', 'id_customer_name_other')">
+                    <option value="" selected="selected">---------</option>
+                    <option value="1">锐捷</option>
+                    <option value="2">深信服</option>
+                    <option value="3">三盟</option>
+                    <option value="other">其他</option>
+                </select>
+                <input id="id_customer_name_other" maxlength="500" name="customer_name_other"
+                       placeholder="其他客户名称" type="text" hidden/>
+        </tr>
+        <tr>
+            <td class="body">
+                <div class="fieldWrapper">
+                    <span> </span>
+                    <label>处理阶段:</label>
+                </div>
+            </td>
+            <td>
+                <label for="id_exclusion_phase"></label><select id="id_exclusion_phase" name="exclusion_phase">
+                    <option value="" selected="selected">---------</option>
+                    <option value="1">处理中</option>
+                    <option value="2">已完成</option>
+                </select>
+            </td>
+            <td class="body">
+                <div class="fieldWrapper">
+                    <span></span>
+                    <label> 产品SN:</label>
+                </div>
+            </td>
+            <td>
+                <span> <label for="id_sn"></label><input id="id_sn" maxlength="250" name="sn" type="text"/></span>
+            </td>
+        </tr>
+        <tr>
+            <td class="body">
+                <div class="fieldWrapper">
+                    <span> </span>
+                    <label>附件上传:</label>
+                </div>
+            </td>
+            <td>
+                <input id="id_enclosure" name="enclosure" type="file"/>
+            </td>
+            <td class="body">
+                <div class="fieldWrapper">
+                    <span></span>
+                    <label>发现途径:</label>
+                </div>
+            </td>
+            <td>
+                <label for="id_discovery_phase"></label><select id="id_discovery_phase" name="discovery_phase"
+                                                                onclick="change('id_discovery_phase', 'id_discovery_phase_other')">
+                    <option value="" selected="selected">---------</option>
+                    <option value="1">公司内部</option>
+                    <option value="2">客户</option>
+                    <option value="other">其他</option>
+                </select>
+                <input id="id_discovery_phase_other" maxlength="500" name="discovery_phase_other"
+                       placeholder="其他发现途径" type="text" hidden/>
+            </td>
+        </tr>
+        <tr>
+            <td class="body">
+                <div class="fieldWrapper">
+                    <span></span>
+                    <label>BUG简述:</label>
+                </div>
+            </td>
+            <td>
+            <textarea cols="50" id="id_bug_describe" maxlength="500" name="bug_describe" placeholder="错误描述" rows="2"></textarea>
+            </td>
+        </tr>
+    </table>
+    <table width="100%" border="0" style="font-size:25px">
+        <tr>
+            <td class="body" width="12%" rowspan="7">
+                <div class="fieldWrapper">
+                    <span> </span>
+                    <label>BUG记录:</label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td width="16%">BUG现象详细描述:</td>
+            <td class="left"><label for="id_phenomenon_description"></label><textarea cols="90"
+                                                                                      id="id_phenomenon_description"
+                                                                                      maxlength="500"
+                                                                                      name="phenomenon_description"
+                                                                                      rows="3"></textarea><span></span>
+            </td>
+        </tr>
+        <tr>
+            <td width="16%">BUG产生步骤描述:</td>
+            <td class="left"><label for="id_step_description"></label><textarea cols="90" id="id_step_description"
+                                                                                maxlength="500" name="step_description"
+                                                                                rows="3"></textarea><span></span></td>
+        </tr>
+        <tr>
+            <td width="16%">发生地点:</td>
+            <td class="left"><label for="id_test_site"></label><textarea cols="90" id="id_test_site" maxlength="500"
+                                                                         name="test_site"
+                                                                         rows="3"></textarea><span></span></td>
+        </tr>
+        <tr>
+            <td width="16%">配置信息:</td>
+            <td class="left">
+                <label for="id_configuration_information"></label><textarea cols="90" id="id_configuration_information"
+                                                                            maxlength="500"
+                                                                            name="configuration_information" rows="7">准系统：
+C P U：
+内 存：
+S S D：
+硬 盘：
+主 板：
+阵列卡：</textarea>
+                <span></span>
+            </td>
+        </tr>
+
+        <tr>
+            <td width="16%">处理措施:</td>
+            <td class="left"><label for="id_test_model"></label>
+                <textarea cols="90" id="id_test_model" maxlength="500"
+                          name="test_model"
+                          rows="3"></textarea>
+                <span></span></td>
+        </tr>
+        <tr>
+            <td width="16%">建议看法:</td>
+            <td class="left"><label for="id_suggested_view"></label>
+                <textarea cols="90" id="id_suggested_view"
+                          maxlength="500" name="suggested_view"
+                          rows="3"></textarea>
+                <span></span></td>
+        </tr>
+    </table>
+    <p class="body">
+        <input type="submit" style="font-size:25px" value="提交"
+               onclick="{this.disabled=true;document.form1.submit();this.value='提交中……';}"/>
+        <input type="reset" style="font-size:25px" value="重置" />
+    </p>
+</form>
+</body>
+</html>

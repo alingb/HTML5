@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../AwesomeChartJS-master/.idea/AwesomeChartJS-master.iml" filepath="$PROJECT_DIR$/../AwesomeChartJS-master/.idea/AwesomeChartJS-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../.idea/PycharmProjects.iml" filepath="$PROJECT_DIR$/../.idea/PycharmProjects.iml" />
+      <module fileurl="file://$USER_HOME$/Desktop/html5-canvas-chart-js/.idea/html5-canvas-chart-js.iml" filepath="$USER_HOME$/Desktop/html5-canvas-chart-js/.idea/html5-canvas-chart-js.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../untitled3/.idea/untitled3.iml" filepath="$PROJECT_DIR$/../untitled3/.idea/untitled3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/untitled4.iml" filepath="$PROJECT_DIR$/.idea/untitled4.iml" />
+      <module fileurl="file://$USER_HOME$/Desktop/ytym/.idea/ytym.iml" filepath="$USER_HOME$/Desktop/ytym/.idea/ytym.iml" />
+    </modules>
+  </component>
+</project>

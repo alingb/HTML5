@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+<style type="text/css">
+    li {
+        list-style-type: none;
+        margin: 5px 5px 5px 5px;
+    }
+
+    li:nth-of-type(odd) {
+        background: #2aabd2;
+        border-radius:5px;
+    }
+
+    li:nth-of-type(even) {
+        background: #007aff;
+        border-radius:5px;
+    }
+    button {
+        font-size: 15px;
+        background: #007aff;
+        border-radius: 10px;
+    }
+
+    th {
+        color: green;
+        text-align: left
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    }
+
+    .body span {
+        color: red;
+        font-size: 15px
+    }
+
+    .left span {
+        color: red;
+        font-size: 15px
+    }
+
+    #header {
+        background-color: blue;
+        color: white;
+        text-align: center;
+        padding: 5px;
+        border-radius:5px;
+    }
+
+    #link {
+        background-color: #428bca;
+        color: black;
+        text-align: left;
+        padding: 5px;
+        border-radius:5px;
+    }
+
+    #nav {
+        font-size: 20px;
+        line-height: 50px;
+        background-color: #2b669a;
+        height: 600px;
+        width: 100px;
+        float: left;
+        padding: 10px;
+        border-radius:5px;
+    }
+
+    #section {
+        width: 730px;
+        float: right;
+        padding: 5px;
+    }
+
+    #left {
+        width: 700px;
+        float: right;
+    }
+
+    #footer {
+        background-color: black;
+        color: white;
+        clear: both;
+        text-align: center;
+        padding: 5px;
+    }
+</style>
+<head>
+    <div id="header"><h1>服务器详细信息</h1></div>
+</head>
+<div id="link">
+    <button onclick="window.open('http://192.168.1.57/')">首页</button>
+    <button onclick="window.open('http://192.168.1.57/technology/web/host/')">老化测试系统</button>
+    <button onclick="window.open('http://192.168.1.57/bugsystem/')">Debug提交</button>
+    <button onclick="window.open('http://192.168.1.57/technology/technology/error/')">Debug系统</button>
+    <button onclick="window.open('http://192.168.1.57/technology/web/hostcheck/')">近期服务器信息</button>
+    <span></span>
+</div>
+<body bgcolor="Gainsboro">
+<div id="nav">
+        <li><a href="">详细信息</a></li>
+        <li><a href="">主板信息</a></li>
+        <li><a href="">IPMI信息</a></li>
+        <li><a href="">PCIE信息</a></li>
+        <li><a href="">SMART</a></li>
+</div>
+
+</body>
+</html>

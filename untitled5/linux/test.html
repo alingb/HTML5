@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=UTF-8>
+  <script>
+    function mytime() {
+      var a = new Date();
+      var b = a.toLocaleTimeString();
+      var c = a.toLocaleDateString();
+      document.getElementById("time1").innerHTML = c + "&nbsp" + b;
+    }
+
+    setInterval(function () {
+      mytime()
+    }, 10);
+  </script>
+  <script>
+    function num() {
+      var Num = "";
+      for (var i = 0; i < 6; i++) {
+        Num += Math.floor(Math.random() * 10);
+      }
+      document.getElementById("bh").innerText = Num;
+    }
+
+    setInterval(function () {
+      num()
+    });
+  </script>
+  <script>
+    function change(id, id2) {
+      var a = document.getElementById(id).value;
+      if (a !== 'other') {
+        document.getElementById(id).hidden = false;
+        document.getElementById(id2).hidden = 'disabled';
+      }
+      else {
+        document.getElementById(id2).hidden = false;
+        document.getElementById(id).hidden = 'disabled';
+      }
+    }
+  </script>
+  <style type="text/css">
+    button {
+      font-size: 15px;
+      background: #007aff;
+      border-radius: 10px;
+    }
+
+    .left {
+      float: left
+    }
+
+    .body {
+      text-align: center
+    }
+
+    .right {
+      float: right
+    }
+
+    td {
+      width: 130px;
+      padding: 0px 15px;
+      color: green;
+    }
+
+    .body span {
+      color: red;
+      font-size: 10px;
+    }
+
+    td span {
+      color: red;
+      font-size: 10px;
+    }
+  </style>
+  <title>
+    故障记录
+  </title>
+  <div>
+    Welcome, {{ user }} <a href="/logout">logout</a>
+  </div>
+  <h1 align="center">故障汇总提交</h1>
+  <h3 id="time1" style="color: blueviolet;" class="body"></h3>
+</head>
+<body bgcolor="Gainsboro">
+<form action="/faebugsystem/" name=form1 method="post" enctype="multipart/form-data">
+  <table border="0" style="font-size:25px">
+    <tbody>
+    <tr>
+      <td class="left">
+        问题ID:
+      </td>
+      <td>
+        <label>
+          <input type="text" name="num" value={{ num }} readonly>
+        </label>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="fieldWrapper">
+          <label>
+            产品名称:
+          </label>
+        </div>
+      </td>
+      <td>
+        <label for="id_product_name"></label><select id="id_product_name" name="product_name"
+                                                     onclick="change('id_product_name', 'id_product_name_other')">
+        <option value="" selected="selected">---------</option>
+        <option value="ASR1100">华硕ASR1100</option>
+        <option value="K880G3">英业达K880G3</option>
+        <option value="ASD2550">华硕ASD2550</option>
+        <option value="RS720Q-E8">华硕RS720Q-E8</option>
+        <option value="RS300-E9-PS4">华硕RS300-E9-PS4</option>
+        <option value="ASR2612">华硕ASR2612</option>
+        <option value="D51B-2U">广达D51B-2U</option>
+        <option value="T41S-2U">广达T41S-2U</option>
+        <option value="RS300-E9-PS4">华硕RS300-E9-PS4</option>
+        <option value="RS520-E8-RS8">华硕RS520-E8-RS8</option>
+        <option value="S210-X22RQ">广达S210-X22RQ</option>
+        <option value="ESC4000G3">华硕ESC4000G3</option>
+        <option value="RS520-E8-RS12">华硕RS520-E8-RS12</option>
+        <option value="other">其他</option>
+      </select>
+        <input id="id_product_name_other" maxlength="500" name="product_name_other"
+               placeholder="其他产品名称" type="text" hidden/>
+        <span>{{ form.product_name.errors }}</span>
+      </td>
+
+    </tr>
+    <tr>
+      <td>
+        <div class="fieldWrapper">
+          <label>客户名称:</label>
+        </div>
+      </td>
+      <td type="time">
+        <label for="id_customer_name"><select id="id_customer_name" name="customer_name"
+                                                      onclick="change('id_customer_name', 'id_customer_name_other')">
+        <option value="" selected="selected">---------</option>
+        <option value="1">锐捷</option>
+        <option value="2">深信服</option>
+        <option value="3">三盟</option>
+        <option value="other">其他</option>
+      </select>
+        <input id="id_customer_name_other" maxlength="500" name="customer_name_other"
+               placeholder="其他客户名称" type="text" hidden/>
+        <span>{{ form.customer_name.errors }} </span>
+        </label>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="fieldWrapper">
+          <label>
+            问题状态:
+          </label>
+        </div>
+      </td>
+      <td>
+        <label for="id_exclusion_phase"></label><select id="id_exclusion_phase" name="exclusion_phase">
+        <option value="" selected="selected">---------</option>
+        <option value="1">处理中</option>
+        <option value="2">已完成</option>
+      </select>
+        <span>{{ form.exclusion_phase.errors }} </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="fieldWrapper">
+          <label> 产品SN:</label>
+        </div>
+      </td>
+      <td>
+        <span> <label for="id_sn"></label><input id="id_sn" maxlength="250" name="sn" type="text"/></span>
+        <span>{{ form.sn.errors }}</span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="fieldWrapper">
+          <label>附件上传:</label>
+        </div>
+      </td>
+      <td>
+        <input id="id_enclosure" name="enclosure" type="file"/>
+        <span> {{ form.enclosure.errors }}</span>
+      </td>
+    <tr>
+      <td width="16%">
+        问题描述:
+      </td>
+      <td class="left"><label for="id_phenomenon_description"></label><textarea cols="90"
+                                                                                id="id_phenomenon_description"
+                                                                                maxlength="500"
+                                                                                name="phenomenon_description"
+                                                                                rows="3"></textarea>
+        <span>{{ form.phenomenon_description.errors }}</span>
+      </td>
+    </tr>
+    <tr>
+      <td width="16%">
+        软件和硬件配置信息:
+      </td>
+      <td>
+        <label for="id_configuration_information"></label><textarea cols="90" id="id_configuration_information"
+                                                                    maxlength="500"
+                                                                    name="configuration_information" rows="9">准系统(含BIOS和BMC版本):
+CPU:
+内 存:
+SSD:
+硬 盘:
+主 板:
+阵列卡:
+OS版本:
+其他:</textarea>
+        <span>{{ form.configuration_information.errors }}</span>
+      </td>
+    </tr>
+    <tr>
+      <td width="16%">
+        解决方法:
+      </td>
+      <td><label for="id_resolvent"><textarea cols="90" id="id_resolvent"
+                                              name="resolvent"
+                                              rows="10"></textarea></label>
+        <span>{{ form.resolvent.errors }}</span>
+      </td>
+    </tr>
+  </table>
+    <p class="body">
+      <input type="submit" style="font-size:25px" value="提交"
+             onclick="{this.disabled=true;document.form1.submit();this.value='提交中……';}"/>
+      <input type="reset" style="font-size:25px" value="重置"/>
+    </p>
+    </tbody>
+</form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{% extends "detail.html" %}
+{% block head %}
+    <div id="header"><h1>BMC详细信息</h1></div>
+{% endblock %}
+{% block table %}
+    <tr>
+        <th>BMC VERSION</th>
+        <td>
+            <pre>{{ form.BMC_VERSION }}</pre>
+        </td>
+    </tr>
+    <tr>
+        <th colspan="1">FRU</th>
+        <td colspan="3">
+            <pre>{{ form.FRU_INFO }}</pre>
+        </td>
+    </tr>
+    <tr>
+        <th colspan="1">SEL LOG</th>
+        <td colspan="3">
+            <pre>{{ all.sel }}</pre>
+        </td>
+    </tr>
+
+{% endblock %}

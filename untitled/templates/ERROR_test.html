@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=UTF-8>
+<script>
+    function mytime(){
+        var a = new Date();
+        var b = a.toLocaleTimeString();
+        var c = a.toLocaleDateString();
+        document.getElementById("time1").innerHTML = c+"&nbsp"+b;
+        }
+    setInterval(function() {mytime()},10);
+</script>
+<script>
+    function num(){
+        var Num="",
+        for (var i=0;i<6;i++)
+        {
+          Num+=Math.floor(Math.random()*10);
+        }
+        document.getElementById("bh").innerText=Num;
+        }
+    setInterval(function() {num()});
+</script>
+  <style type="text/css">
+    button {
+        font-size: 15px;
+        background: #007aff;
+        border-radius: 10px;
+    }
+  .left {float:left}
+  .body {text-align:center}
+  .right {float:right}
+  td {color:green}
+  .body span{color:red;font-size:15px}
+  .left span{color:red;font-size:15px}
+  </style>
+ <title>
+    故障记录
+ </title>
+<div>
+Welcome,  {{ user }} <a href="/logout">logout</a>
+</div>
+<h1 align="center">故障汇总提交</h1>
+<h3 id="time1" style="color: blueviolet;" class="body"></h3>
+<div class="left"><button onclick="window.open('http://192.168.1.57/')">index</button></div>
+<div class="left"><button onclick="window.open('http://192.168.1.57/technology/web/host/')">老化测试系统</button></div>
+<div class="right"><button onclick="window.open('http://192.168.1.57/bugsystem/')">Debug提交</button></div>
+<div class="right"><button onclick="window.open('http://192.168.1.57/technology/technology/error/')">Debug系统</button></div>
+<div class="left"><button onclick="window.open('http://192.168.1.57/technology/web/hostcheck/')">近期服务器信息</button></div>
+
+
+</head>
+<body bgcolor="Gainsboro" >
+<form action="/bugsystem/" name=form1 method="post" enctype="multipart/form-data">
+<table width="85%" border="0"  style="font-size:25px">
+  <tbody >
+        <tr>
+        <td class="body">BUG编号:</td>
+        <td><input type="text" name="num" value="{{ num }}" readonly></td>
+        </tr>
+        <tr>
+        <td class="body"><div class="fieldWrapper">
+        <span color:red>{{ form.email.errors }}</span>
+        <label> 抄送人员:</label>
+        </td>
+        <td >
+        {{ form.email }}
+        </div>
+        </td>
+{#       <td class="body"><div class="fieldWrapper">#}
+{#        {{ form.test_person.errors }}#}
+{#        <label>测试人员:</label>#}
+{#        </td>#}
+{#        <td ><div class="fieldWrapper">#}
+{#        {{ form.test_person }}#}
+{#        </div>#}
+{#        </td> #}
+        <td class="body"><div class="fieldWrapper">
+       <span> {{ form.product_name.errors }}</span>
+            <label> 产品名称:</label></div>
+        </td>
+        <td >{{ form.product_name }}</br>{{ form.product_name_other }}
+        </td>
+      </tr>
+      <tr>
+        <td class="body"><div class="fieldWrapper">
+        <span>{{ form.bug_person.errors }}</span>
+        <label> bug负责人:</label></div>
+        </td>
+        <td >
+       <span> {{ form.bug_person }}</span>
+        </td>
+        <td class="body">
+        <div class="fieldWrapper">
+        <span>{{ form.project_name.errors }}</span>
+        <label>项目名称: </label></div>
+        </td>
+        <td >
+        {{ form.project_name }}</br> {{ form.project_name_other }}
+        </td>
+      </tr>
+      <tr>
+        </td>
+        <td class="body"><div class="fieldWrapper">
+       <span> {{ form.bug_level.errors }}</span>
+        <label>BUG等级:</label></div>
+        </td>
+        <td >
+        {{ form.bug_level }}
+        <td class="body"><div class="fieldWrapper">
+       <span> {{ form.customer_name.errors }}</span>
+        <label>客户名称:</label></div>
+        </td>
+        <td type="time">
+        {{ form.customer_name }}</br> {{ form.customer_name_other }}
+        </td>
+      </tr>
+      <tr>
+        <td class="body"><div class="fieldWrapper">
+       <span> {{ form.exclusion_phase.errors }}</span>
+        <label>处理阶段:</label>
+        </td>
+        <td >
+        {{ form.exclusion_phase }}
+        </div>
+        </td>
+        <td class="body"><div class="fieldWrapper">
+        <span>{{ form.sn.errors }}</span>
+        <label> 产品SN:</label>
+        </td>
+        <td >
+       <span> {{ form.sn }}</span>
+        </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="body"><div class="fieldWrapper">
+       <span> {{ form.enclosure.errors }}</span>
+        <label>附件上传:</label>
+        </td>
+        <td >
+        {{ form.enclosure }}
+        </div>
+        </td>
+        <td class="body"><div class="fieldWrapper">
+        <span>{{ form.discovery_phase.errors }}</span>
+        <label>发现途径:</label>
+        </td>
+        <td >
+        {{ form.discovery_phase }}</br> {{ form.discovery_phase_other }}
+        </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="body"><div class="fieldWrapper">
+        <span >{{ form.bug_describe.errors }}</span>
+        <label>BUG简述:</label>
+        </td>
+        <td >
+        {{ form.bug_describe }}
+        </div>
+        </td>
+      </tr>
+</table>
+<table width="100%" border="0"  style="font-size:25px">
+      <tr>
+        <td class="body" width="12%" rowspan="7"><div class="fieldWrapper">
+       <span> {{ form.bug_record.errors }}</span>
+        <label>BUG记录:</label>
+        </div>
+        </td>
+      </tr>
+       <tr> <td width="16%">BUG现象详细描述:</td>
+            <td class="left">{{ form.phenomenon_description }}<span>{{ form.phenomenon_description.errors }}</span></td>
+       </tr>
+{#      <tr> <td width="16%">测试软件名称:</td>#}
+{#            <td class="left">{{ form.software_name }}<span>{{ form.software_name.errors }}</span></td>#}
+{#       </tr>#}
+       <tr> <td width="16%">BUG产生步骤描述:</td>
+            <td class="left">{{ form.step_description }}<span>{{ form.step_description.errors }}</span></td>
+       </tr>
+       <tr> <td width="16%">发生地点:</td>
+            <td class="left">{{ form.test_site }}<span></span>{{ form.test_site.errors }}</td>
+       </tr>
+       <tr> <td width="16%">配置信息:</td>
+            <td class="left">{{ form.configuration_information }}<span>{{ form.configuration_information.errors }}</span></td>
+       </tr>
+{#      <tr> <td width="16%">软件版本:</td>#}
+{#            <td class="left">{{ form.software_version }}<span>{{ form.software_version.errors }}</span></td>#}
+{#       </tr>#}
+       <tr> <td width="16%">处理措施:</td>
+            <td class="left">{{ form.test_model }}<span>{{ form.test_model.errors }}</span></td>
+       </tr>
+       <tr> <td width="16%">建议看法:</td>
+            <td class="left">{{ form.suggested_view }}<span>{{ form.suggested_view.errors }}</span></td>
+       </tr>
+  <tleft/>
+</table>
+    <p class="body"><input type="submit" style="font-size:25px" value="提交" onclick="javascript:{this.disabled=true;document.form1.submit();this.value='提交中……';}"/></p>
+</form>
+</left>
+</html>

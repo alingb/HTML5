@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../HTML5-master/.idea/HTML5-master.iml" filepath="$PROJECT_DIR$/../HTML5-master/.idea/HTML5-master.iml" />
+      <module fileurl="file://$USER_HOME$/Desktop/dingtalkchatbot/.idea/dingtalkchatbot.iml" filepath="$USER_HOME$/Desktop/dingtalkchatbot/.idea/dingtalkchatbot.iml" />
+      <module fileurl="file://$USER_HOME$/Desktop/django_admin_bootstrapped/.idea/django_admin_bootstrapped.iml" filepath="$USER_HOME$/Desktop/django_admin_bootstrapped/.idea/django_admin_bootstrapped.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/untitled1.iml" filepath="$PROJECT_DIR$/.idea/untitled1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../untitled2/.idea/untitled2.iml" filepath="$PROJECT_DIR$/../untitled2/.idea/untitled2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../untitled4/.idea/untitled4.iml" filepath="$PROJECT_DIR$/../untitled4/.idea/untitled4.iml" />
+      <module fileurl="file://$USER_HOME$/Desktop/ytym/.idea/ytym.iml" filepath="$USER_HOME$/Desktop/ytym/.idea/ytym.iml" />
+    </modules>
+  </component>
+</project>
