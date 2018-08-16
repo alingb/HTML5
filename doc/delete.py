@@ -13,7 +13,7 @@ def mysqlConn(cmd):
         'host': '192.168.6.120',
         'user': 'trusme',
         'password': '6286280300',
-        'database': 'cmdb'
+        'database': 'command'
     }
     con = MySQLdb.connect(**mysql_config)
     cur = con.cursor()

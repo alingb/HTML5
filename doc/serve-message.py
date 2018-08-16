@@ -31,7 +31,7 @@ def allInfo(cmd):
 # noinspection PyBroadException
 def connMysql(cmd):
     try:
-        con = MySQLdb.connect('192.168.1.57', 'trusme', '6286280300', 'cmdb')
+        con = MySQLdb.connect('192.168.1.57', 'trusme', '6286280300', 'command')
     except:
         return ''
     cur = con.cursor()

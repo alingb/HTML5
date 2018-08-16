@@ -38,10 +38,10 @@ def connMysql(cmd):
         'host': '192.168.1.57',
         'user': 'trusme',
         'password': '6286280300',
-        'database': 'cmdb'
+        'database': 'command'
     }
     try:
-        con = MySQLdb.connect('192.168.1.57', 'trusme', '6286280300', 'cmdb')
+        con = MySQLdb.connect('192.168.1.57', 'trusme', '6286280300', 'command')
     except:
         return ''
     cur = con.cursor()

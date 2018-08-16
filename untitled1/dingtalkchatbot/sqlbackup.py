@@ -5,7 +5,7 @@
 
 import django
 import os
-from web.models import Host, TestHost
+from web_1.models import Host, TestHost
 
 
 def getSqlMsg(Obj):

@@ -753,7 +753,7 @@ NODE 4   DIMM_D1"""
 
     def check(self, info):
         try:
-            con = MySQLdb.connect('192.168.1.57', 'trusme', '6286280300', 'cmdb')
+            con = MySQLdb.connect('192.168.1.57', 'trusme', '6286280300', 'command')
         except:
             return {'status': 'mariadb error'}
         cur = con.cursor()
@@ -937,7 +937,7 @@ if __name__ == '__main__':
     dic.update(c.bootTime())
     dic.update(c.biosTime())
     try:
-        con = MySQLdb.connect('192.168.1.57', 'trusme', '6286280300', 'cmdb')
+        con = MySQLdb.connect('192.168.1.57', 'trusme', '6286280300', 'command')
         cur = con.cursor()
         cmd = "select * from base"
         cur.execute(cmd)

@@ -5,7 +5,7 @@ from django.contrib import admin
 
 
 # Register your models here.
-from web.models import HostMsg
+from web_1.models import HostMsg
 
 
 class HostMsgAdmin(admin.ModelAdmin):

@@ -6,7 +6,7 @@
 
 from django import forms
 
-from web.models import FaeError
+from web_1.models import FaeError
 
 
 class FaeErrorForm(forms.Form):

@@ -110,7 +110,7 @@ DATABASES = {
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'cmdb',
+#         'NAME': 'command',
 #         'USER': 'trusme',
 #         'PASSWORD': '6286280300',
 #         'HOST': '192.168.6.120',

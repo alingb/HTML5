@@ -9,7 +9,7 @@ import datetime
 
 
 def serverInfo(sn, sn_1):
-    con = MySQLdb.connect('192.168.6.120', 'trusme', '6286280300', 'cmdb')
+    con = MySQLdb.connect('192.168.6.120', 'trusme', '6286280300', 'command')
     cur = con.cursor()
     cur.execute('select * from web_host where sn="%s"' % sn)
     data = cur.fetchall()
@@ -68,7 +68,7 @@ def serverInfo(sn, sn_1):
 
 def info():
     dic = {}
-    con = MySQLdb.connect('192.168.6.120', 'trusme', '6286280300', 'cmdb')
+    con = MySQLdb.connect('192.168.6.120', 'trusme', '6286280300', 'command')
     cur = con.cursor()
     cur.execute('select * from web_stat')
     data = cur.fetchall()

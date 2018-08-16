@@ -243,7 +243,7 @@
 #
 # pool = redis.ConnectionPool(host='192.168.1.57')
 # r = redis.Redis(connection_pool=pool)
-# mysql = MySQLdb.connect(host='192.168.1.57', user='trusme', passwd='6286280300', db='cmdb')
+# mysql = MySQLdb.connect(host='192.168.1.57', user='trusme', passwd='6286280300', db='command')
 # cur = mysql.cursor()
 # cur.execute('select * from base')
 # msg = cur.fetchall()

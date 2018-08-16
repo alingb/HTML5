@@ -1,0 +1,1012 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b5a9453a-1e3f-449d-b352-904ea63cece1" name="Default Changelist" comment="">
+      <change beforePath="$USER_HOME$/Desktop/ytym/technology/admin.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/technology/admin.py" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/test.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/test.py" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/__init__.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/__init__.py" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/admin.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/admin.py" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/forms.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/forms.py" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0001_initial.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0002_auto_20170602_1342.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0002_auto_20170602_1342.py" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0003_hostcheck.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0003_hostcheck.py" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0004_auto_20170602_1602.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0004_auto_20170602_1602.py" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0005_auto_20170607_1336.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0005_auto_20170607_1336.py" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0006_auto_20170614_1228.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0006_auto_20170614_1228.py" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0007_auto_20170705_1528.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0007_auto_20170705_1528.py" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0008_auto_20170706_1036.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0008_auto_20170706_1036.py" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0009_auto_20170720_1115.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0009_auto_20170720_1115.py" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0010_auto_20170720_1123.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0010_auto_20170720_1123.py" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0011_auto_20170720_1144.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0011_auto_20170720_1144.py" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0012_auto_20170724_1700.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0012_auto_20170724_1700.py" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0013_auto_20170904_1005.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0013_auto_20170904_1005.py" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0014_auto_20170914_1446.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0014_auto_20170914_1446.py" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0015_auto_20170914_1536.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0015_auto_20170914_1536.py" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0016_smart.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0016_smart.py" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0017_auto_20170919_1421.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0017_auto_20170919_1421.py" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0018_auto_20170922_1353.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0018_auto_20170922_1353.py" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0019_info_url.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0019_info_url.py" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0020_smart_time.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0020_smart_time.py" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0021_smart_explain.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0021_smart_explain.py" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0022_auto_20171027_1018.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0022_auto_20171027_1018.py" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0023_auto_20171123_0930.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0023_auto_20171123_0930.py" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0024_host_ip.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0024_host_ip.py" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0025_changebiosbmc.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0025_changebiosbmc.py" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0026_changebiosbmc_fru.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0026_changebiosbmc_fru.py" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0027_remove_changebiosbmc_number.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0027_remove_changebiosbmc_number.py" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/__init__.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/models.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/models.py" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/templates/change_bios_bmc.html" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/templates/change_bios_bmc.html" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/templates/collect.html" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/templates/collect.html" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/templates/cpu.html" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/templates/cpu.html" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/templates/detail.html" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/templates/detail.html" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/templates/index.html" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/templates/index.html" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/templates/run.html" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/templates/run.html" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/templates/smart.html" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/templates/smart.html" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/templates/sn.html" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/templates/sn.html" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/templates/status.html" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/templates/status.html" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/templates/web/detail.html" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/templates/web/detail.html" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/tests.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/tests.py" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/views.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/views.py" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/web/views.py.bak" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/views.py.bak" afterDir="false" />
+      <change beforePath="$USER_HOME$/Desktop/ytym/ytym/settings.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/ytym/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PycharmProjects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PycharmProjects.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/check.py" beforeDir="false" afterPath="$PROJECT_DIR$/doc/check.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/delete.py" beforeDir="false" afterPath="$PROJECT_DIR$/doc/delete.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/messege-usb.py" beforeDir="false" afterPath="$PROJECT_DIR$/doc/messege-usb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/serve-message.py" beforeDir="false" afterPath="$PROJECT_DIR$/doc/serve-message.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/sqlbackup.py" beforeDir="false" afterPath="$PROJECT_DIR$/doc/sqlbackup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/ssh.py" beforeDir="false" afterPath="$PROJECT_DIR$/doc/ssh.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve-message.py" beforeDir="false" afterPath="$PROJECT_DIR$/serve-message.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/untitled/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/untitled/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/web/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/web/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/web/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/web/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled1/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled1/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled1/chat.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled1/chat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled1/chat_for_stree.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled1/chat_for_stree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled1/dingding.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled1/dingding.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled1/dingtalkchatbot/sqlbackup.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled1/dingtalkchatbot/sqlbackup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled1/messege-usb.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled1/messege-usb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled1/sqlbackup.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled1/sqlbackup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled1/test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled1/test1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled2/cmdb/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled2/cmdb/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled2/cmdb/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled2/cmdb/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled2/cmdb/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled2/cmdb/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled2/cmdb/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled2/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/untitled2/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled2/scripts/demon1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled2/templates/css/demon1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled2/templates/demon1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled2/templates/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled2/untitled2/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled2/untitled2/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled2/untitled2/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled2/untitled2/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled2/web/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/untitled2/web/templates/web/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled2/web/templates/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/untitled2/web/templates/web/index2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled2/web/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled2/web/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled2/web/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled2/web/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled3/untitled3/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled3/untitled3/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled3/web/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled3/web/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled3/web/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled3/web/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled4/untitled4/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled4/untitled4/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled4/web/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled4/web/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled4/web/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled4/web/views.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/PycharmProjects$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1533706923036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/untitled1" />
+    <SUITE FILE_PATH="coverage/PycharmProjects$salt.coverage" NAME="salt Coverage Results" MODIFIED="1534232851706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/ytym" />
+    <SUITE FILE_PATH="coverage/PycharmProjects$check_move.coverage" NAME="check_move Coverage Results" MODIFIED="1534230128655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/ytym" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1677236641">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.33" value="1" />
+          <entry key="project.open.time.36" value="1" />
+          <entry key="project.open.time.37" value="1" />
+          <entry key="project.open.time.47" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="1" />
+          <entry key="html" value="18" />
+          <entry key="js" value="2" />
+          <entry key="md" value="1" />
+          <entry key="passwd" value="2" />
+          <entry key="py" value="53" />
+          <entry key="sql" value="1" />
+          <entry key="txt" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="1" />
+          <entry key="HTML" value="18" />
+          <entry key="JavaScript" value="2" />
+          <entry key="Markdown" value="1" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="Python" value="53" />
+          <entry key="SQL" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="2" />
+          <entry key="html" value="83" />
+          <entry key="py" value="1839" />
+          <entry key="py@PycharmProjects" value="104" />
+          <entry key="txt" value="30" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CommandLine" value="70" />
+          <entry key="HTML" value="83" />
+          <entry key="PLAIN_TEXT" value="66" />
+          <entry key="Python" value="1839" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/untitled2/untitled2/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="267">
+              <caret line="48" column="50" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/untitled2/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/untitled2/untitled2/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/untitled2" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/untitled2/web/templates/base.html" />
+        <option value="$PROJECT_DIR$/untitled1/test1.py" />
+        <option value="$PROJECT_DIR$/untitled2/sql_update.py" />
+        <option value="$USER_HOME$/Desktop/ytym/chech_move.py" />
+        <option value="$USER_HOME$/Desktop/ytym/a.py" />
+        <option value="$USER_HOME$/Desktop/ytym/check_move.py" />
+        <option value="$USER_HOME$/Desktop/ytym/salt.py" />
+        <option value="$PROJECT_DIR$/untitled2/web/urls.py" />
+        <option value="$PROJECT_DIR$/untitled2/command/templates/index2.html" />
+        <option value="$PROJECT_DIR$/untitled2/command/templates/test.html" />
+        <option value="$PROJECT_DIR$/untitled2/command/templates/command/index1.html" />
+        <option value="$PROJECT_DIR$/untitled2/command/views.py" />
+        <option value="$PROJECT_DIR$/untitled2/command/templates/command/index.html" />
+        <option value="$PROJECT_DIR$/untitled2/command/urls.py" />
+        <option value="$PROJECT_DIR$/untitled2/templates/base.html" />
+        <option value="$PROJECT_DIR$/untitled2/templates/login.html" />
+        <option value="$PROJECT_DIR$/untitled2/web/forms.py" />
+        <option value="$PROJECT_DIR$/untitled2/web/static/css/signin.css" />
+        <option value="$PROJECT_DIR$/untitled2/web/templates/web/login.html" />
+        <option value="$PROJECT_DIR$/untitled2/untitled2/settings.py" />
+        <option value="$USER_HOME$/Desktop/ytym/web_1/views.py" />
+        <option value="$PROJECT_DIR$/untitled2/web/views.py" />
+        <option value="$PROJECT_DIR$/untitled2/untitled2/urls.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$USER_HOME$/Desktop/HTML5-master/HTML5-master/06-阶段六（PHP基础+微信后台和游戏开发）/php-other/sample/node/node_modules" />
+    <handled-path value="$PROJECT_DIR$/HTML5-master/06-阶段六（PHP基础+微信后台和游戏开发）/php-other/sample/node/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$USER_HOME$/Desktop/HTML5-master/HTML5-master/06-阶段六（PHP基础+微信后台和游戏开发）/php-other/sample/node/package.json" />
+      <path value="$PROJECT_DIR$/HTML5-master/06-阶段六（PHP基础+微信后台和游戏开发）/php-other/sample/node/package.json" />
+      <path value="$PROJECT_DIR$/untitled2/web/static/AdminLTE-2.4.1/bower_components/bootstrap/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="453" />
+    <option name="y" value="13" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="PycharmProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PycharmProjects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PycharmProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PycharmProjects" type="462c0819:PsiDirectoryNode" />
+              <item name="untitled2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PycharmProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PycharmProjects" type="462c0819:PsiDirectoryNode" />
+              <item name="untitled2" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PycharmProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PycharmProjects" type="462c0819:PsiDirectoryNode" />
+              <item name="untitled2" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PycharmProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PycharmProjects" type="462c0819:PsiDirectoryNode" />
+              <item name="untitled2" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PycharmProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="PycharmProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 2.7 (venv) &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="PycharmProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 2.7 (venv) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PycharmProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 2.7 (venv) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PycharmProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 2.7 (venv) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/HTML5-master" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.selected.package.stylelint" value="" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\12\PycharmProjects\untitled2\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\12\PycharmProjects\untitled2\web\templates\web" />
+      <recent name="C:\Users\12\PycharmProjects\untitled2\web\templates" />
+      <recent name="C:\Users\12\PycharmProjects\untitled2\command\templates\command" />
+    </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/untitled2/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/untitled2/venv/pip-selfcheck.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/untitled2/web/templates/base.html</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/untitled2/ansibel.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/untitled2/move_file.py</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Django server.Untitled2">
+    <configuration name="check_move" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ytym" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Desktop/ytym" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Desktop/ytym/check_move.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="salt" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ytym" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Desktop/ytym" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Desktop/ytym/salt.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PycharmProjects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/untitled1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/untitled1/test1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Untitled2" type="Python.DjangoServer" factoryName="Django server">
+      <module name="PycharmProjects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="untitled2.settings" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\12\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Django server.Untitled2" />
+      <item itemvalue="Python.test1" />
+      <item itemvalue="Python.check_move" />
+      <item itemvalue="Python.salt" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.salt" />
+        <item itemvalue="Python.check_move" />
+        <item itemvalue="Python.test1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b5a9453a-1e3f-449d-b352-904ea63cece1" name="Default Changelist" comment="" />
+      <created>1533691317826</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1533691317826</updated>
+    </task>
+    <task id="LOCAL-00001" summary="test">
+      <created>1533691586673</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1533691586673</updated>
+    </task>
+    <task id="LOCAL-00002" summary="test">
+      <created>1533695976965</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1533695976965</updated>
+    </task>
+    <task id="LOCAL-00003" summary="2018-08-08">
+      <created>1533707224956</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1533707224956</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update">
+      <created>1533715224283</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1533715224283</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update">
+      <created>1533715774889</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1533715774889</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update 2018-08-14">
+      <created>1534230812196</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1534230812196</updated>
+    </task>
+    <task id="LOCAL-00007" summary="update 2018-08-14">
+      <created>1534235826577</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1534235826577</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18003026" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="manage.py@PycharmProjects" order="0" visible="true" weight="0.21510673" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32840723" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.4977307" weight="0.6288998" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.32840723" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50226927" side_tool="true" weight="0.40655738" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.027914613" />
+      <window_info anchor="bottom" id="Python Console" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test" />
+    <MESSAGE value="2018-08-08" />
+    <MESSAGE value="update" />
+    <MESSAGE value="update 2018-08-14" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 2018-08-14" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/untitled2/web/static/AdminLTE-2.4.1/bower_components/bootstrap/dist/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled1/新建文本文档.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled1/passwd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="30" selection-start-column="30" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled1/test1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="403" column="16" selection-start-line="402" selection-end-line="407" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/ytym/chech_move.py" />
+    <entry file="file://$USER_HOME$/venv/Lib/site-packages/pymysql/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="88" column="35" selection-start-line="88" selection-start-column="35" selection-end-line="88" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/venv/Lib/site-packages/pymysql/connections.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="519" column="37" lean-forward="true" selection-start-line="519" selection-start-column="37" selection-end-line="519" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/ytym/a.py" />
+    <entry file="file://C:/Python27/Lib/urllib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-512">
+          <caret line="1306" column="4" selection-start-line="1306" selection-start-column="4" selection-end-line="1306" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/httplib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1087">
+          <caret line="1039" column="8" selection-start-line="1039" selection-start-column="8" selection-end-line="1039" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/ytym/control.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/ytym/client.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled2/ansibel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-144">
+          <caret line="48" column="75" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
+          <folding>
+            <element signature="e#65#99#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled2/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled2/sql_update.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-683">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled2/move_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2025" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/ytym/check_move.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-899">
+          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+          <folding>
+            <element signature="e#43#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/ytym/test.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/ytym/storage.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/ytym/salt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-837">
+          <caret line="70" column="14" selection-start-line="70" selection-start-column="14" selection-end-line="70" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled2/web/templates/web/index2.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled2/command/templates/command/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled2/templates/demon1.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled2/templates/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2452" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled2/web/templates/web/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1215">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled2/command/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+            <marker date="1534298301756" expanded="true" signature="144:149" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled2/command/templates/command/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled2/scripts/demon1.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled2/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/venv/Lib/site-packages/django/contrib/admin/templates/admin/base_site.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5-master/07-ZeptoJS/Zepto03.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="77" column="31" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/venv/Lib/site-packages/django/contrib/admin/templates/admin/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled2/web/forms.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled2/web/static/css/signin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="33" column="31" lean-forward="true" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled2/untitled2/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="48" column="50" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/ytym/web_1/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/ytym/web_1/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="156" column="4" selection-start-line="156" selection-start-column="4" selection-end-line="156" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled2/command/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled2/web/templates/web/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-20">
+          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#label#1;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled2/web/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled2/command/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled2/web/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+            <marker date="1534301034395" expanded="true" signature="291:330" ph="..." />
+            <marker date="1534301034395" expanded="true" signature="349:1406" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled2/web/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled5/linux/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#633#665#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/venv/Lib/site-packages/django/conf/urls/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="76" column="16" lean-forward="true" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/venv/Lib/site-packages/web/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled2/untitled2/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -22,6 +22,8 @@
     <orderEntry type="module" module-name="untitled4" />
     <orderEntry type="module" module-name="ytym" />
     <orderEntry type="module" module-name="HTML5-master" />
+    <orderEntry type="library" name="html5shiv" level="application" />
+    <orderEntry type="library" name="respond" level="application" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Django" />

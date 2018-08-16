@@ -30,7 +30,7 @@ class MysqlData(object):
             'host': '192.168.1.57',
             'user': 'trusme',
             'password': '6286280300',
-            'database': 'cmdb'
+            'database': 'command'
         }
 
     def mysqlConn(self):

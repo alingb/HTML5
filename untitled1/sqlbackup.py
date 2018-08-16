@@ -9,7 +9,7 @@ import os
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "ytym.settings")
 django.setup()
 
-from web.models import Host, TestHost
+from web_1.models import Host, TestHost
 
 def getSqlMsg(Obj, info, num):
     obj = Obj.objects.order_by(info).values()[:int(num)]

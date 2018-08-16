@@ -6,7 +6,7 @@ from dingtalkchatbot.chatbot import DingtalkChatbot
 
 if __name__ == '__main__':
     import pymysql
-    conn = pymysql.connect(host="192.168.1.57", user="trusme", database="cmdb", password="6286280300")
+    conn = pymysql.connect(host="192.168.1.57", user="trusme", database="command", password="6286280300")
     cur = conn.cursor()
     cmd = "select id,name from web_host order by id limit 1"
     cur.execute(cmd)

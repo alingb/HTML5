@@ -7,7 +7,7 @@ from multi import Pool
 
 
 def mysqlConn(cmd):
-    con = MySQLdb.Connect("192.168.6.120", "trusme", "6286280300", "cmdb")
+    con = MySQLdb.Connect("192.168.6.120", "trusme", "6286280300", "command")
     cur = con.cursor()
     cur.execute(cmd)
     msg = cur.fetchall()
@@ -27,7 +27,7 @@ def sshConn(ip, cmd):
 
 
 def getIp():
-    cmd = 'select * from cmdb.web_stat'
+    cmd = 'select * from command.web_stat'
     data = mysqlConn(cmd)
     dic = {}
     for i in data:

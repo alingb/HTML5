@@ -188,40 +188,40 @@ def timeFun(sched_time):
     flag = 0
     while True:
         now = datetime.datetime.now()
-        if sched_time < now < sched_time + datetime.timedelta(seconds=1):  # ÒòÎªÊ±¼äÃëÖ®ºóµÄÐ¡Êý²¿·Ö²»Ò»¶¨ÏàµÈ£¬Òª±ê¼ÇÒ»¸ö·¶Î§ÅÐ¶Ï
+        if sched_time < now < sched_time + datetime.timedelta(seconds=1):  # ï¿½ï¿½ÎªÊ±ï¿½ï¿½ï¿½ï¿½Ö®ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½Ö²ï¿½Ò»ï¿½ï¿½ï¿½ï¿½È£ï¿½Òªï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Î§ï¿½Ð¶ï¿½
             send_move()
-            time.sleep(1)  # Ã¿´ÎÅÐ¶Ï¼ä¸ô1s£¬±ÜÃâ¶à´Î´¥·¢ÊÂ¼þ
+            time.sleep(1)  # Ã¿ï¿½ï¿½ï¿½Ð¶Ï¼ï¿½ï¿½1sï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î´ï¿½ï¿½ï¿½ï¿½Â¼ï¿½
             flag = 1
         else:
             # print('schedual time is {0}'.format(sched_time))
             # print('now is {0}'.format(now))
             if flag == 1:
-                sched_time = sched_time + datetime.timedelta(hours=1)  # °ÑÄ¿±êÊ±¼äÔö¼ÓÒ»¸öÐ¡Ê±£¬Ò»¸öÐ¡Ê±ºó´¥·¢ÔÙ´ÎÖ´ÐÐ
+                sched_time = sched_time + datetime.timedelta(hours=1)  # ï¿½ï¿½Ä¿ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ð¡Ê±ï¿½ï¿½Ò»ï¿½ï¿½Ð¡Ê±ï¿½ó´¥·ï¿½ï¿½Ù´ï¿½Ö´ï¿½ï¿½
                 flag = 0
 
 
 def send_move():
     # nickname = input('please input your firends\' nickname : ' )
-    #   Ïë¸øË­·¢ÐÅÏ¢£¬ÏÈ²éÕÒµ½Õâ¸öÅóÓÑ,nameºóÌîÎ¢ÐÅ±¸×¢¼´¿É,deepin²âÊÔ³É¹¦
+    #   ï¿½ï¿½ï¿½Ë­ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½È²ï¿½ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,nameï¿½ï¿½ï¿½ï¿½Î¢ï¿½Å±ï¿½×¢ï¿½ï¿½ï¿½ï¿½,deepinï¿½ï¿½ï¿½Ô³É¹ï¿½
     # users = itchat.search_friends(name=nickname)
-    users = itchat.search_friends(name='Kim')  # Ê¹ÓÃ±¸×¢ÃûÀ´²éÕÒÊµ¼ÊÓÃ»§Ãû
-    # »ñÈ¡ºÃÓÑÈ«²¿ÐÅÏ¢,·µ»ØÒ»¸öÁÐ±í,ÁÐ±íÄÚÊÇÒ»¸ö×Öµä
+    users = itchat.search_friends(name='Kim')  # Ê¹ï¿½Ã±ï¿½×¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½
+    # ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½È«ï¿½ï¿½ï¿½ï¿½Ï¢,ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ð±ï¿½,ï¿½Ð±ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Öµï¿½
     import pymysql
-    conn = pymysql.connect(host="192.168.1.57", user="trusme", database="cmdb", password="6286280300")
+    conn = pymysql.connect(host="192.168.1.57", user="trusme", database="command", password="6286280300")
     cur = conn.cursor()
     cmd = "select id,name,family from web_host order by id"
     cur.execute(cmd)
     data = cur.fetchall()
     # print(users)
-    # »ñÈ¡`UserName`,ÓÃÓÚ·¢ËÍÏûÏ¢
+    # ï¿½ï¿½È¡`UserName`,ï¿½ï¿½ï¿½Ú·ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     userName = users[0]['UserName']
     itchat.send(data, toUserName=userName)
     print('pass')
 
 
 if __name__ == '__main__':
-    itchat.auto_login(hotReload=True)  # Ê×´ÎÉ¨ÃèµÇÂ¼ºóºóÐø×Ô¶¯µÇÂ¼
-    sched_time = datetime.datetime(2018, 4, 24, 16, 24, 00)  # Éè¶¨³õ´Î´¥·¢ÊÂ¼þµÄÊÂ¼þµã
+    itchat.auto_login(hotReload=True)  # ï¿½×´ï¿½É¨ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½Â¼
+    sched_time = datetime.datetime(2018, 4, 24, 16, 24, 00)  # ï¿½è¶¨ï¿½ï¿½ï¿½Î´ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½
     print('run the timer task at {0}'.format(sched_time))
     timeFun(sched_time)
 
