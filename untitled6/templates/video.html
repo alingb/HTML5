@@ -1,0 +1,40 @@
+{% load static  %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>选择：</h3>
+    <div>
+        {% action_all current_url 1 %} :
+        {% for item in direction_list %}
+
+             {% action current_url item %}
+        {% endfor %}
+    </div>
+    <div>
+        {% action_all current_url 2 %} :
+        {% for item in class_list %}
+
+            {% action current_url item %}
+        {% endfor %}
+    </div>
+    <div>
+        {% action_all current_url 3 %} :
+        {% for item in level_list %}
+            {% action current_url item %}
+        {% endfor %}
+    </div>
+
+<h3>视频：</h3>
+    {% for item in video_list %}
+        <a class="item" href="{{ item.href }}">
+            <img src="/{{ item.img }}" width="300px" height="400px">
+            <p>{{ item.title }}</p>
+            <p>{{ item.summary }}</p>
+        </a>
+    {% endfor %}
+</body>
+</html>

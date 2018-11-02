@@ -12,7 +12,7 @@ import urllib2
 from optparse import OptionParser
 from subprocess import Popen, PIPE
 import MySQLdb
-
+import threading
 
 def allInfo(cmd):
     info = Popen(cmd, stdout=PIPE, stderr=PIPE, shell=True)
@@ -34,14 +34,8 @@ def allInfo(cmd):
 
 # noinspection PyBroadException
 def connMysql(cmd):
-    mysql_config = {
-        'host': '192.168.1.57',
-        'user': 'trusme',
-        'password': '6286280300',
-        'database': 'command'
-    }
     try:
-        con = MySQLdb.connect('192.168.1.57', 'trusme', '6286280300', 'command')
+        con = MySQLdb.connect('192.168.1.57', 'trusme', '6286280300', 'cmdb')
     except:
         return ''
     cur = con.cursor()
@@ -81,8 +75,11 @@ class CollectMessage(object):
         info = allInfo(cmd)
         cpu_info = re.findall(r'\sVersion:(.*CPU.*)', info, re.M)
         cpu_num = len(cpu_info)
-        if 'Gold' in str(cpu_info):
-            cpu = [i for i in set(cpu_info) if i][0].split('Xeon(R)')[1].strip()
+        if 'CPU @' in str(cpu_info):
+            try:
+                cpu = [i for i in set(cpu_info) if i][0].split('Xeon(R)')[1].strip()
+            except:
+                cpu = [i for i in set(cpu_info) if i][0].split('Core(TM)')[1].strip()
         else:
             cpu = [i for i in set(cpu_info) if i][0].split('CPU')[1].strip()
         self.get_message.update({"cpu_data": cpu, "cpu_num": cpu_num, "cpu": "%s  (%s)" % (cpu, cpu_num)})
@@ -124,7 +121,15 @@ class CollectMessage(object):
         cmd = '/usr/bin/lsscsi|egrep -iv "SanDisk|enclosu|Virtual|scsi" | grep disk'
         disk_info = allInfo(cmd)
         disk_name = re.findall(r'/dev/sd.*', disk_info, re.M)
-        msg = []
+        msg, ssd_fw = [], {}
+        for i in disk_name:
+            cmd = '/usr/sbin/smartctl -i %s' % i
+            info = allInfo(cmd)
+            if 'INTEL' in info:
+                for b in info.split('\n'):
+                    if b.startswith('Firmware Version:'):
+                        intel_ssd_fw = b.split()[-1][-4:]
+                        ssd_fw[i] = intel_ssd_fw
         for i in disk_name:
             cmd = '/usr/sbin/smartctl -i %s' % i
             info = allInfo(cmd)
@@ -140,7 +145,7 @@ class CollectMessage(object):
                 disk_dict[disk] = num
         disk_num = sum(disk_dict.values())
         # self.get_message.update({'disk': disk_dict, 'disk_num': disk_num, 'locate_disk': info})
-        return {'disk': disk_dict, 'disk_num': disk_num, 'locate_disk': disk_info}
+        return {'ssd_fw':ssd_fw, 'disk': disk_dict, 'disk_num': disk_num, 'locate_disk': disk_info}
 
     def raidDiskMessage(self):
         raid, raid_id = self._raidMessage()
@@ -154,7 +159,7 @@ class CollectMessage(object):
             raid_num = re.findall(r'Slot (Number: [\d]+)', info, re.M)
             raid_type = re.findall(r'PD (Type: [A-Z]+)', info, re.M)
             raid_data = [i.split() for i in raid_data if i]
-            disk_locate, t, disk_other, disk_dict = '', 0, [], {}
+            disk_locate, t, disk_other = '', 0, []
             for i in raid_data:
                 disk_locate += '{}    {}    {}    {} {}\n'.format(raid_num[t], raid_type[t], raid_size[t], i[0][8:],
                                                                   i[1])
@@ -170,14 +175,14 @@ class CollectMessage(object):
                 for j in set(disk_other):
                     if i == j:
                         n += 1
-                    disk_dict[i] = n
+                    disk_dict.update({i: n})
             raid_disk_num = sum(disk_dict.values()) + int(diskmessage['disk_num'])
         else:
             disk_locate = diskmessage['locate_disk']
             raid_disk_num = diskmessage['disk_num']
         self.get_message.update(
-                {'disk': disk_dict, 'raid': raid, 'disk_num': raid_disk_num, 'locate_disk': disk_locate})
-        return {'disk': disk_dict, 'raid': raid, 'disk_num': raid_disk_num, 'locate_disk': disk_locate}
+                {'ssd_fw':diskmessage['ssd_fw'], 'disk': disk_dict, 'raid': raid, 'disk_num': raid_disk_num, 'locate_disk': disk_locate})
+        return {'ssd_fw':diskmessage['ssd_fw'], 'disk': disk_dict, 'raid': raid, 'disk_num': raid_disk_num, 'locate_disk': disk_locate}
 
     def smartMessage(self):
         cmd = 'ls /dev/ | grep ^sd | grep -v [0-9]'
@@ -193,13 +198,16 @@ class CollectMessage(object):
                 if name.startswith('=== START'):
                     msg += 'POSITION:{}\n'.format(i)
                 for k, v in {'Device Model': 'MODEL', 'Serial Number': 'DISK SN',
-                             'User Capacity': 'DISK SIZE'}.iteritems():
+                             'User Capacity': 'DISK SIZE','Firmware Version': 'Firmware Version'}.iteritems():
                     if name.startswith(k):
                         msg += '{0}:{1}\n'.format(v, name.split(':')[1].strip())
             if msg:
                 for data in smart_data:
                     msg += '{0}\n'.format(data.strip())
                 msg += '\n'
+        if not msg:
+            cmd = 'lsblk'
+            msg = allInfo(cmd)
         self.get_message.update({"smart_info": msg})
         return {"smart_info": msg}
 
@@ -314,7 +322,7 @@ class CollectMessage(object):
         info = allInfo(cmd)
         family = re.search(r'Family:(.*)', info, re.M)
         if family:
-            family = family.group(1)
+            family = family.group(1).strip()
         else:
             family = ''
         self.get_message.update({'family': family})
@@ -417,13 +425,20 @@ class CollectMessage(object):
         return {"pci_info": pci_info}
 
     def main(self):
+        ret = []
         func_list = {self.cpuMessage, self.memoryMessage, self.raidDiskMessage, self.smartMessage,
                      self.macMessage, self.networkMessage, self.productSnMessage, self.timeMessage,
                      self.productNameMessage, self.produceFamilyMessage, self.produceBiosMessage,
                      self.bmcMessage, self.fruMessage, self.selMessage, self.hostnameMessage, self.powerMessage,
                      self.bootTimeMessage, self.biosTimeMessage, self.pcieMessage}
         for func in func_list:
-            func()
+        #    func()
+            woker = threading.Thread(target=func, args=())
+            ret.append(woker)
+        for rt in ret:
+            rt.start()
+        for rt in ret:
+            rt.join()
         return self.get_message
 
 
@@ -514,20 +529,20 @@ NODE 3	 DIMM_F1
 NODE 4	 DIMM_G1
 NODE 4	 DIMM_H1"""
         RG_iData_Server = """NODE 1		DIMM_A0
-NODE 1   DIMM_A1 
-NODE 1   DIMM_B0 
-NODE 1   DIMM_B1 
-NODE 2   DIMM_C0 
-NODE 2   DIMM_C1 
-NODE 2   DIMM_D0 
-NODE 2   DIMM_D1 
-NODE 3   DIMM_A0 
-NODE 3   DIMM_A1 
-NODE 3   DIMM_B0 
-NODE 3   DIMM_B1 
-NODE 4   DIMM_C0 
-NODE 4   DIMM_C1 
-NODE 4   DIMM_D0 
+NODE 1   DIMM_A1
+NODE 1   DIMM_B0
+NODE 1   DIMM_B1
+NODE 2   DIMM_C0
+NODE 2   DIMM_C1
+NODE 2   DIMM_D0
+NODE 2   DIMM_D1
+NODE 3   DIMM_A0
+NODE 3   DIMM_A1
+NODE 3   DIMM_B0
+NODE 3   DIMM_B1
+NODE 4   DIMM_C0
+NODE 4   DIMM_C1
+NODE 4   DIMM_D0
 NODE 4   DIMM_D1"""
         memory_locate_dic = {'RG-RCD6000-Main': RG_RCD6000_Main, 'RG-RCD6000-Office': RG_RCD6000_Office,
                              'RG-RCM1000-Edu': RG_RCM1000_Edu, 'RG-RCM1000-Office': RG_RCM1000_Office, 'RG-RCP': RG_RCP,
@@ -671,16 +686,45 @@ class CheckDetailMessage(object):
                     self.ret.append('fru fail')
         return self.ret
 
+    def checkSsdFW(self):
+        try:
+            for name, num in self.dic['ssd_fw'].items():
+                if int(num) < 142:
+                    self.ret.append('ssd fw fail')
+        except Exception,err:
+            self.ret.append(err)
+        return self.ret
+
+
+    def checkSmart(self):
+        msg = self.dic['smart_info']
+        if msg:
+            smart_msg = msg.split('\n\n')
+            for smart in smart_msg:
+                for_msg = smart.split('\n')
+                disk_pt = for_msg[0]
+                for each in for_msg:
+                    data = each.split()
+                    if len(data) > 8:
+                        for num in [5, 197, 198, 199]:
+                            if str(num) == data[0]:
+                                if data[-1] != '0':
+                                    self.ret.append("{}-{} smart erro".format(num, disk_pt))
+
+
     def checkDisk(self, disk_num, ssd_num, mac_num):
         if self.dic['name'] == 'RG-RCD6000-Main':
+            self.checkSsdFW()
             if self.check_info['disk_4t'] != disk_num or self.check_info['ssd_960'] != ssd_num:
                 self.ret.append('disk fail')
         elif self.dic['name'] == 'RG-RCD6000-Office':
+            self.checkSsdFW()
             if self.check_info['disk_1t'] != disk_num or self.check_info['ssd_960'] != ssd_num:
                 self.ret.append('disk fail')
         elif self.dic['name'] == 'RG-RCM1000-Smart' or \
                 self.dic['name'] == 'RG-RCM1000-Office' or \
                 self.dic['name'] == 'RG-RCM1000-Edu':
+            self.checkSsdFW()
             if self.check_info['disk_4t'] != disk_num or self.check_info['ssd_240'] != ssd_num:
                 self.ret.append('disk fail')
         elif self.dic['name'] == 'RG-ONC-AIO-E':
@@ -697,6 +741,10 @@ class CheckDetailMessage(object):
                 self.ret.append('disk fail')
         elif self.dic['name'] == 'RG-SE04':
             if self.check_info['disk_2t'] != disk_num:
+                self.ret.append('disk fail')
+        elif self.dic['name'] == 'RG-RCD6000E V3':
+            self.checkSsdFW()
+            if self.check_info['disk_1t'] != disk_num or self.check_info['ssd_240'] != ssd_num:
                 self.ret.append('disk fail')
         elif self.dic['family'] == 'XINWEIH_C612_VDS-5050':
             if self.check_info['ssd_64'] != ssd_num:
@@ -732,9 +780,10 @@ class CheckDetailMessage(object):
         self.checkFru()
         self.checkPCIE()
         self.checkMemoryLocator()
+        self.checkSmart()
 
     def runCheck(self):
-        status = self.info().get('status')
+        status = self.info.get('status')
         if isinstance(status, list):
             for status_key, status_values in status[0].items():
                 server_msg = self.checkMessage(status_key, status_values)
@@ -828,84 +877,86 @@ def runMain(msg):
     locate_disk = msg['locate_disk']
     disk_info, network_info, mac_info = '', '', ''
     for k, v in disk:
-        disk_info += "{}  ({})\n\t".format(k, v)
+        disk_info += "{}  ({})\n".format(k, v)
     for k, v in network:
-        network_info += "{}  ({})\n\t".format(k, v)
+        network_info += "{}  ({})\n".format(k, v)
     for k, v in sorted(mac):
-        mac_info += "{}    {}\n\t".format(k, v)
+        mac_info += "{}    {}\n".format(k, v)
     if not locate_disk:
         locate_disk = msg['locate_disk']
         if not locate_disk:
             locate_disk = ''
     mem_locate = memLocator()[0]
-    message = '''NAME:  {0}
-FAMILY:  {1}
-CHECK STAT:
-	{2}
-SN:
-	{3}
-SN1:
-	{4}
-TIME:
-	{5}
-BOOT TIME:
-	{6}
-BIOS TIME:
-	{7}
-CPU:
-	{8}
-MEMORY INFO:
-	{9}
-DISK INFO:
-	{10}
-RAID INFO:
-	{11}
-NETWORK INFO:
-	{12}
-MAC INFO:
-	{13}
-BIOS VERSION:
-	{14}
-BMC VERSION:
-	{15}
-PCIE INFO:
-{16}
-FRU INFO:
-{17}
-LOCATE DISK:
-{18}
-LOCATE MEMORY:
-{19}
-IP:	 {20}
-POWER: {21}
-DISK_SN: {22}'''.format(name,
-                        family,
-                        status,
-                        sn,
-                        sn1,
-                        time,
-                        boot_time,
-                        bios_time,
-                        cpu,
-                        memory,
-                        disk_info.strip(),
-                        raid,
-                        network_info.strip(),
-                        mac_info.strip(),
-                        bios,
-                        bmc,
-                        pci_info,
-                        fru,
-                        locate_disk,
-                        mem_locate,
-                        msg['ip'],
-                        msg['power'],
-                        '', )
+    message = "NAME:  {0}\n" \
+              "FAMILY:  {1}\n" \
+              "CHECK STAT:\n" \
+              "    {2}\n" \
+              "SN:\n" \
+              "    {3}\n" \
+              "SN1:\n" \
+              "    {4}\n" \
+              "TIME:\n" \
+              "    {5}\n" \
+              "BOOT TIME:\n" \
+              "    {6}\n" \
+              "BIOS TIME:\n" \
+              "    {7}\n" \
+              "CPU:\n" \
+              "    {8}\n" \
+              "MEMORY INFO:\n" \
+              "    {9}\n" \
+              "DISK INFO:\n" \
+              "    {10}\n" \
+              "RAID INFO:\n" \
+              "    {11}\n" \
+              "NETWORK INFO:\n" \
+              "    {12}\n" \
+              "MAC INFO:\n" \
+              "    {13}\n" \
+              "BIOS VERSION:\n" \
+              "    {14}\n" \
+              "BMC VERSION:\n" \
+              "    {15}\n" \
+              "PCIE INFO:\n" \
+              "{16}\n" \
+              "FRU INFO:\n" \
+              "{17}\n" \
+              "LOCATE DISK:\n" \
+              "{18}\n" \
+              "LOCATE MEMORY:\n" \
+              "{19}\n" \
+              "IP:	 {20}\n" \
+              "POWER: {21}\n" \
+              "DISK_SN: {22}".format(name,
+                                     family,
+                                     status,
+                                     sn,
+                                     sn1,
+                                     time,
+                                     boot_time,
+                                     bios_time,
+                                     cpu,
+                                     memory,
+                                     disk_info.strip(),
+                                     raid,
+                                     network_info.strip(),
+                                     mac_info.strip(),
+                                     bios,
+                                     bmc,
+                                     pci_info,
+                                     fru,
+                                     locate_disk,
+                                     mem_locate,
+                                     msg['ip'],
+                                     msg['power'],
+                                     '', )
     msg.update({'message': message})
     return msg
 
 
 def sedMessage(msg):
+    if not os.path.exists('/log'):
+        os.mkdir('/log')
     filename = os.path.join('/log', msg['sn'])
     data = json.dumps(msg)
     try:
@@ -927,7 +978,7 @@ if __name__ == '__main__':
     parser.add_option('-s', '--show', dest='show', action='store_true')
     (options, args) = parser.parse_args()
     if options.version:
-        print("Version: V1.3.2")
+        print("Version: V1.3.3")
     if options.show:
         msg_dict = CollectMessage().main()
         info_dict = runMain(msg_dict)

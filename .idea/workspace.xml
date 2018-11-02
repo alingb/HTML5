@@ -1,98 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5a9453a-1e3f-449d-b352-904ea63cece1" name="Default Changelist" comment="">
-      <change beforePath="$USER_HOME$/Desktop/ytym/technology/admin.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/technology/admin.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/test.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/test.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/__init__.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/__init__.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/admin.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/admin.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/forms.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/forms.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0001_initial.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0002_auto_20170602_1342.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0002_auto_20170602_1342.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0003_hostcheck.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0003_hostcheck.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0004_auto_20170602_1602.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0004_auto_20170602_1602.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0005_auto_20170607_1336.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0005_auto_20170607_1336.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0006_auto_20170614_1228.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0006_auto_20170614_1228.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0007_auto_20170705_1528.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0007_auto_20170705_1528.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0008_auto_20170706_1036.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0008_auto_20170706_1036.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0009_auto_20170720_1115.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0009_auto_20170720_1115.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0010_auto_20170720_1123.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0010_auto_20170720_1123.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0011_auto_20170720_1144.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0011_auto_20170720_1144.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0012_auto_20170724_1700.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0012_auto_20170724_1700.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0013_auto_20170904_1005.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0013_auto_20170904_1005.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0014_auto_20170914_1446.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0014_auto_20170914_1446.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0015_auto_20170914_1536.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0015_auto_20170914_1536.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0016_smart.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0016_smart.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0017_auto_20170919_1421.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0017_auto_20170919_1421.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0018_auto_20170922_1353.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0018_auto_20170922_1353.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0019_info_url.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0019_info_url.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0020_smart_time.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0020_smart_time.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0021_smart_explain.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0021_smart_explain.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0022_auto_20171027_1018.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0022_auto_20171027_1018.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0023_auto_20171123_0930.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0023_auto_20171123_0930.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0024_host_ip.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0024_host_ip.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0025_changebiosbmc.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0025_changebiosbmc.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0026_changebiosbmc_fru.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0026_changebiosbmc_fru.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/0027_remove_changebiosbmc_number.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/0027_remove_changebiosbmc_number.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/migrations/__init__.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/models.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/models.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/templates/change_bios_bmc.html" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/templates/change_bios_bmc.html" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/templates/collect.html" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/templates/collect.html" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/templates/cpu.html" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/templates/cpu.html" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/templates/detail.html" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/templates/detail.html" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/templates/index.html" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/templates/index.html" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/templates/run.html" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/templates/run.html" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/templates/smart.html" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/templates/smart.html" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/templates/sn.html" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/templates/sn.html" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/templates/status.html" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/templates/status.html" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/templates/web/detail.html" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/templates/web/detail.html" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/tests.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/tests.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/views.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/views.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/web/views.py.bak" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/web_1/views.py.bak" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/ytym/ytym/settings.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/ytym/ytym/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PycharmProjects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PycharmProjects.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/check.py" beforeDir="false" afterPath="$PROJECT_DIR$/doc/check.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/delete.py" beforeDir="false" afterPath="$PROJECT_DIR$/doc/delete.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/messege-usb.py" beforeDir="false" afterPath="$PROJECT_DIR$/doc/messege-usb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/serve-message.py" beforeDir="false" afterPath="$PROJECT_DIR$/doc/serve-message.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/sqlbackup.py" beforeDir="false" afterPath="$PROJECT_DIR$/doc/sqlbackup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/ssh.py" beforeDir="false" afterPath="$PROJECT_DIR$/doc/ssh.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serve-message.py" beforeDir="false" afterPath="$PROJECT_DIR$/serve-message.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/untitled/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/untitled/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/web/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/web/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/web/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/web/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled1/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled1/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled1/chat.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled1/chat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled1/chat_for_stree.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled1/chat_for_stree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled1/dingding.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled1/dingding.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled1/dingtalkchatbot/sqlbackup.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled1/dingtalkchatbot/sqlbackup.py" afterDir="false" />
+    <list default="true" id="b5a9453a-1e3f-449d-b352-904ea63cece1" name="Default Changelist" comment="update 2018-08-14">
+      <change afterPath="$PROJECT_DIR$/untitled6/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled6/templates/video.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled6/testvideo/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dtest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtest/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/dtest/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtest/dtest/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/dtest/dtest/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luk_server/lukMsg/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/luk_server/lukMsg/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luk_server/lukMsg/migrations/0002_auto_20181028_0901.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/luk_server/lukMsg/migrations/0003_lukinfo_runtime.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/luk_server/lukMsg/migrations/0004_auto_20181030_1340.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/luk_server/lukMsg/migrations/0005_auto_20181030_1428.py" beforeDir="false" afterPath="$PROJECT_DIR$/luk_server/lukMsg/migrations/0002_auto_20181101_1002.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luk_server/lukMsg/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/luk_server/lukMsg/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luk_server/lukMsg/static/lukMsg/scripts/luksensor.js" beforeDir="false" afterPath="$PROJECT_DIR$/luk_server/lukMsg/static/lukMsg/scripts/luksensor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luk_server/lukMsg/static/lukMsg/scripts/lukservice.js" beforeDir="false" afterPath="$PROJECT_DIR$/luk_server/lukMsg/static/lukMsg/scripts/lukservice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luk_server/lukMsg/static/lukMsg/scripts/lukuser.js" beforeDir="false" afterPath="$PROJECT_DIR$/luk_server/lukMsg/static/lukMsg/scripts/lukuser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luk_server/lukMsg/templates/luktotalmsg.html" beforeDir="false" afterPath="$PROJECT_DIR$/luk_server/lukMsg/templates/luktotalmsg.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luk_server/lukMsg/templates/lukuser.html" beforeDir="false" afterPath="$PROJECT_DIR$/luk_server/lukMsg/templates/lukuser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luk_server/lukMsg/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/luk_server/lukMsg/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luk_server/lukMsg/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/luk_server/lukMsg/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luk_server/luk_server/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/luk_server/luk_server/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/untitled1/messege-usb.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled1/messege-usb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled1/sqlbackup.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled1/sqlbackup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled1/test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled1/test1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled2/cmdb/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled2/cmdb/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled2/cmdb/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled2/cmdb/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled2/cmdb/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled2/cmdb/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled2/cmdb/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled2/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/untitled2/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled2/scripts/demon1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled2/templates/css/demon1.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled2/templates/demon1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled2/templates/test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled2/untitled2/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled2/untitled2/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled2/untitled2/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled2/untitled2/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled2/web/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/untitled2/web/templates/web/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled2/web/templates/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/untitled2/web/templates/web/index2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled2/web/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled2/web/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled2/web/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled2/web/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled3/untitled3/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled3/untitled3/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled3/web/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled3/web/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled3/web/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled3/web/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled4/untitled4/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled4/untitled4/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled4/web/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled4/web/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled4/web/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled4/web/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -112,15 +44,16 @@
     <session id="-1677236641">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
-          <entry key="project.open.time.2" value="1" />
+          <entry key="project.closed" value="10" />
+          <entry key="project.open.time.0" value="3" />
+          <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.47" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -130,7 +63,7 @@
           <entry key="js" value="2" />
           <entry key="md" value="1" />
           <entry key="passwd" value="2" />
-          <entry key="py" value="53" />
+          <entry key="py" value="54" />
           <entry key="sql" value="1" />
           <entry key="txt" value="1" />
         </counts>
@@ -142,7 +75,7 @@
           <entry key="JavaScript" value="2" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="53" />
+          <entry key="Python" value="54" />
           <entry key="SQL" value="1" />
         </counts>
       </usages-collector>
@@ -150,46 +83,32 @@
         <counts>
           <entry key="dummy" value="2" />
           <entry key="html" value="83" />
-          <entry key="py" value="1839" />
+          <entry key="py" value="2147" />
           <entry key="py@PycharmProjects" value="104" />
-          <entry key="txt" value="30" />
+          <entry key="txt" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CommandLine" value="70" />
           <entry key="HTML" value="83" />
-          <entry key="PLAIN_TEXT" value="66" />
-          <entry key="Python" value="1839" />
+          <entry key="PLAIN_TEXT" value="70" />
+          <entry key="Python" value="2147" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/untitled2/untitled2/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="48" column="50" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/untitled2/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/untitled2/untitled2/urls.py">
+        <entry file="file://$PROJECT_DIR$/untitled1/messege-usb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+            <state relative-caret-position="30">
+              <caret line="698" column="8" selection-start-line="698" selection-start-column="8" selection-end-line="698" selection-end-column="8" />
+              <folding>
+                <element signature="e#95#110#0" expanded="true" />
+                <marker date="1541059505029" expanded="true" signature="27207:27793" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -206,7 +125,9 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/untitled2" />
+    <option name="UPDATE_CHANGES_POLICY" value="SHELVE" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -234,6 +155,8 @@
         <option value="$USER_HOME$/Desktop/ytym/web_1/views.py" />
         <option value="$PROJECT_DIR$/untitled2/web/views.py" />
         <option value="$PROJECT_DIR$/untitled2/untitled2/urls.py" />
+        <option value="$USER_HOME$/Desktop/ytym/web/admin.py" />
+        <option value="$PROJECT_DIR$/untitled1/messege-usb.py" />
       </list>
     </option>
   </component>
@@ -251,7 +174,8 @@
     <packageJsonPaths>
       <path value="$USER_HOME$/Desktop/HTML5-master/HTML5-master/06-阶段六（PHP基础+微信后台和游戏开发）/php-other/sample/node/package.json" />
       <path value="$PROJECT_DIR$/HTML5-master/06-阶段六（PHP基础+微信后台和游戏开发）/php-other/sample/node/package.json" />
-      <path value="$PROJECT_DIR$/untitled2/web/static/AdminLTE-2.4.1/bower_components/bootstrap/package.json" />
+      <path value="$PROJECT_DIR$/dtest/web/static/AdminLTE-2.4.1/bower_components/bootstrap/package.json" />
+      <path value="$PROJECT_DIR$/luk_server/lukMsg/static/lukMsg/bower_components/jquery-slimscroll/package.json" />
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -267,76 +191,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="PycharmProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PycharmProjects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PycharmProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PycharmProjects" type="462c0819:PsiDirectoryNode" />
-              <item name="untitled2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PycharmProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PycharmProjects" type="462c0819:PsiDirectoryNode" />
-              <item name="untitled2" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PycharmProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PycharmProjects" type="462c0819:PsiDirectoryNode" />
-              <item name="untitled2" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="Lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PycharmProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PycharmProjects" type="462c0819:PsiDirectoryNode" />
-              <item name="untitled2" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="Lib" type="462c0819:PsiDirectoryNode" />
-              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PycharmProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="PycharmProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 2.7 (venv) &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="PycharmProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 2.7 (venv) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PycharmProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 2.7 (venv) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="Lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PycharmProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 2.7 (venv) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="Lib" type="462c0819:PsiDirectoryNode" />
-              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -348,7 +203,7 @@
     <property name="node.js.selected.package.stylelint" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -359,120 +214,6 @@
       <recent name="C:\Users\12\PycharmProjects\untitled2\web\templates" />
       <recent name="C:\Users\12\PycharmProjects\untitled2\command\templates\command" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/untitled2/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/untitled2/venv/pip-selfcheck.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/untitled2/web/templates/base.html</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/untitled2/ansibel.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/untitled2/move_file.py</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -651,7 +392,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534235826577</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="update 2018-09-05">
+      <created>1536138604460</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1536138604460</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -667,7 +415,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18003026" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.1860817" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="manage.py@PycharmProjects" order="0" visible="true" weight="0.21510673" />
@@ -702,12 +450,11 @@
     <MESSAGE value="2018-08-08" />
     <MESSAGE value="update" />
     <MESSAGE value="update 2018-08-14" />
-    <option name="LAST_COMMIT_MESSAGE" value="update 2018-08-14" />
+    <MESSAGE value="update 2018-09-05" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 2018-09-05" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/untitled2/web/static/AdminLTE-2.4.1/bower_components/bootstrap/dist/js/bootstrap.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled2/web/static/AdminLTE-2.4.1/bower_components/bootstrap/dist/js/bootstrap.min.js" />
     <entry file="file://$PROJECT_DIR$/untitled1/新建文本文档.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -761,43 +508,14 @@
     <entry file="file://$USER_HOME$/Desktop/ytym/client.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/untitled2/ansibel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-144">
-          <caret line="48" column="75" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
-          <folding>
-            <element signature="e#65#99#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/untitled2/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/untitled2/sql_update.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-683">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/untitled2/move_file.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2025" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled2/ansibel.py" />
+    <entry file="file://$PROJECT_DIR$/untitled2/README.md" />
+    <entry file="file://$PROJECT_DIR$/untitled2/sql_update.py" />
+    <entry file="file://$PROJECT_DIR$/untitled2/move_file.py" />
     <entry file="file://$USER_HOME$/Desktop/ytym/check_move.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-899">
           <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-          <folding>
-            <element signature="e#43#54#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -814,59 +532,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/untitled2/web/templates/web/index2.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/untitled2/command/templates/command/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/untitled2/templates/demon1.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/untitled2/templates/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2452" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/untitled2/web/templates/web/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1215">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/untitled2/command/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-            <marker date="1534298301756" expanded="true" signature="144:149" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/untitled2/command/templates/command/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/untitled2/scripts/demon1.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/untitled2/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled2/web/templates/web/index2.html" />
+    <entry file="file://$PROJECT_DIR$/untitled2/command/templates/command/test.html" />
+    <entry file="file://$PROJECT_DIR$/untitled2/templates/demon1.html" />
+    <entry file="file://$PROJECT_DIR$/untitled2/templates/test.html" />
+    <entry file="file://$PROJECT_DIR$/untitled2/web/templates/web/base.html" />
+    <entry file="file://$PROJECT_DIR$/untitled2/command/views.py" />
+    <entry file="file://$PROJECT_DIR$/untitled2/command/templates/command/index.html" />
+    <entry file="file://$PROJECT_DIR$/untitled2/scripts/demon1.js" />
+    <entry file="file://$PROJECT_DIR$/untitled2/templates/base.html" />
     <entry file="file://$USER_HOME$/venv/Lib/site-packages/django/contrib/admin/templates/admin/base_site.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -884,23 +558,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/untitled2/web/forms.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/untitled2/web/static/css/signin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="33" column="31" lean-forward="true" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/untitled2/untitled2/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="48" column="50" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled2/web/forms.py" />
+    <entry file="file://$PROJECT_DIR$/untitled2/web/static/css/signin.css" />
+    <entry file="file://$PROJECT_DIR$/untitled2/untitled2/settings.py" />
     <entry file="file://$USER_HOME$/Desktop/ytym/web_1/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -908,67 +568,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="156" column="4" selection-start-line="156" selection-start-column="4" selection-end-line="156" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/untitled2/command/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/untitled2/web/templates/web/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-20">
-          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#label#1;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/untitled2/web/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/untitled2/command/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/untitled2/web/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-            <marker date="1534301034395" expanded="true" signature="291:330" ph="..." />
-            <marker date="1534301034395" expanded="true" signature="349:1406" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/untitled2/web/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled2/command/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/untitled2/web/templates/web/login.html" />
+    <entry file="file://$PROJECT_DIR$/untitled2/web/urls.py" />
+    <entry file="file://$PROJECT_DIR$/untitled2/command/urls.py" />
+    <entry file="file://$PROJECT_DIR$/untitled2/web/views.py" />
+    <entry file="file://$PROJECT_DIR$/untitled2/web/__init__.py" />
     <entry file="file://$PROJECT_DIR$/untitled5/linux/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#633#665#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -979,17 +591,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/venv/Lib/site-packages/web/__init__.py">
+    <entry file="file://$USER_HOME$/venv/Lib/site-packages/web/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/untitled2/untitled2/urls.py" />
+    <entry file="file://$USER_HOME$/Desktop/ytym/sqlbackup.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/ytym/web/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        <state relative-caret-position="243">
+          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/untitled2/untitled2/urls.py">
+    <entry file="file://$PROJECT_DIR$/untitled1/messege-usb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+        <state relative-caret-position="30">
+          <caret line="698" column="8" selection-start-line="698" selection-start-column="8" selection-end-line="698" selection-end-column="8" />
+          <folding>
+            <element signature="e#95#110#0" expanded="true" />
+            <marker date="1541059505029" expanded="true" signature="27207:27793" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

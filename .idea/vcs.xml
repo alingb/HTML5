@@ -3,6 +3,8 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$USER_HOME$/Desktop/ytym" vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/dtest" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/luk_server" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/untitled2" vcs="Git" />
   </component>
 </project>
