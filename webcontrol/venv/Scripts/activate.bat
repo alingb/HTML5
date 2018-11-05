@@ -1,5 +1,5 @@
 @echo off
-set "VIRTUAL_ENV=C:\Users\12\PycharmProjects\webcontrol\venv"
+set "VIRTUAL_ENV=C:\Users\12\PycharmProjects\webControl\venv"
 
 if defined _OLD_VIRTUAL_PROMPT (
     set "PROMPT=%_OLD_VIRTUAL_PROMPT%"
