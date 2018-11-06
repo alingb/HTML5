@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="{% static 'control/dist/css/AdminLTE.min.css' %}">
     <link rel="stylesheet" href="{% static 'control/dist/css/skins/skin-blue.min.css' %}">
     <link rel="stylesheet" href="{% static "control/css/bootstrap-table.min.css" %}">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.3/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="{% static "control/css/toastr.css" %}">
     {% block css %}
     {% endblock css %}
@@ -54,9 +56,9 @@
                 {% block link2 %}
                     <li id="link2"><a href="/control/serverdetail"><i class="fa fa-user"></i> <span>详细信息</span></a></li>
                 {% endblock link2 %}
-{#                {% block link3 %}#}
-{#                    <li><a href="#"><i class="fa fa-wrench"></i> <span>算力查看</span></a></li>#}
-{#                {% endblock %}#}
+                {#                {% block link3 %}#}
+                {#                    <li><a href="#"><i class="fa fa-wrench"></i> <span>算力查看</span></a></li>#}
+                {#                {% endblock %}#}
                 {% block treeview %}
                     <li id='tv' class="treeview">
                         <a href="#"><i class="fa fa-calendar"></i> <span>客制化管理</span>
@@ -91,7 +93,11 @@
 <script src="{% static 'control/dist/js/adminlte.min.js' %}"></script>
 <script src="{% static "control/scripts/bootstrap-table.min.js" %}"></script>
 <script src="{% static "control/scripts/bootstrap-table-zh-CN.min.js" %}"></script>
+<script src="{% static "control/scripts/bootstrap-table-export.js" %}"></script>
+<script src="{% static "control/scripts/tableExport.js" %}"></script>
 <script src="{% static "control/scripts/toastr.min.js" %}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.3/js/bootstrap-select.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.3/js/i18n/defaults-*.min.js"></script>
 {% block script %}
 {% endblock script %}
 </body>
