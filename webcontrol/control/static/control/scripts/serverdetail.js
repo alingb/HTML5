@@ -10,23 +10,26 @@ var FileTableInit = function () {
     //初始化Table
     oFileTableInit.Init = function () {
         $('#serverdetail').bootstrapTable({
-            url: '/lukServer/lukServiceMsg',         //请求后台的URL（*）
+            url: '/control/serverinfo',         //请求后台的URL（*）
             method: 'get',    //请求方式（*）
             toolbar: '#toolbar',                //工具按钮用哪个容器
             striped: true,                      //是否显示行间隔色
             cache: false,                       //是否使用缓存，默认为true，所以一般情况下需要设置一下这个属性（*）
             pagination: true,                   //是否显示分页（*）
             sortable: true,                     //是否启用排序
-            sortOrder: "asc",                   //排序方式
+            sortOrder: "asc",                   //排序方式 asc desc
+            sortName: "id",
             queryParams: oFileTableInit.queryParams,//传递参数（*）
             sidePagination: "server",           //分页方式：client客户端分页，server服务端分页（*）
             pageNumber: 1,                       //初始化加载第一页，默认第一页
             pageSize: 10,                       //每页的记录行数（*）
-            pageList: [10, 25, 50, 100, 200],        //可供选择的每页的行数（*）
-            search: false,                       //是否显示表格搜索，此搜索是客户端搜索，不会进服务端，所以，个人感觉意义不大
+            pageList: [10, 25, 50, 100, 200, 500, 1000],        //可供选择的每页的行数（*）
+            search: true,                       //是否显示表格搜索，此搜索是客户端搜索，不会进服务端，所以，个人感觉意义不大
+            searchOnEnterKey: true,
             showExport: true,
-            exportDataType: "basic",
+            exportDataType: "selected", //默认basic：只导出当前页的表格数据；all：导出所有数据；selected：导出选中的数据
             strictSearch: true,
+            paginationLoop: false,
             // showColumns: true,                  //是否显示所有的列
             showRefresh: true,                  //是否显示刷新按钮
             minimumCountColumns: 2,             //最少允许的列数
@@ -55,31 +58,44 @@ var FileTableInit = function () {
             }, {
                 field: 'id',
                 title: 'ID',
+                sortable: true
                 // visible: false
             }, {
-                field: 'macAddr',
-                title: 'MAC地址'
+                field: 'sn',
+                title: 'SN',
+                sortable: true
             }, {
-                field: 'serverStat',
-                title: '服务状态',
-                visible: false
+                field: 'sn_1',
+                title: 'SN1',
+                sortable: true
             }, {
-                field: 'mechineStat',
-                title: '机器状态',
-                visible: false
+                field: 'name',
+                title: 'NAME',
+                sortable: true
             }, {
-                field: 'mechineSensor',
-                title: '机器温度',
+                field: 'name1',
+                title: 'NAME1',
+                sortable: true
             }, {
-                field: 'ipAddr',
-                title: 'IP地址'
+                field: 'family',
+                title: 'FAMILY',
+                sortable: true
             }, {
-                field: 'username',
-                title: '用户名称',
-                visible: false
+                field: 'status',
+                title: '状态',
+                sortable: true
             }, {
-                field: 'runTime',
-                title: '提交时间'
+                field: 'bios',
+                title: 'BIOS',
+                sortable: true
+            },{
+                field: 'bmc',
+                title: 'BMC',
+                sortable: true
+            },{
+                field: 'stress_test',
+                title: '运行状态',
+                sortable: true
             },],
         });
     };
@@ -88,6 +104,9 @@ var FileTableInit = function () {
         var temp = {   //这里的键的名字和控制器的变量名必须一直，这边改动，控制器也需要改成一样的
             limit: params.limit,   //页面大小
             offset: params.offset,  //页码
+            sort: params.sort,      //排序列名
+            sortOrder: params.order, //排位命令（desc，asc）
+            search: params.search
         };
         return temp;
     };
