@@ -1,10 +1,18 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-        <div id="toolbar" class="btn-group">
-        <button id="bios_button" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-            <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+    <div id="toolbar" class="btn-group">
+        <button id="bios_button" type="button" class="btn btn-primary">
+            <span class="glyphicon glyphicon-sort-by-alphabet" aria-hidden="true"></span>
             BIOS客制化
+        </button>
+        <button id="bmc_button" type="button" class="btn btn-facebook">
+            <span class="glyphicon glyphicon-sort-by-alphabet-alt" aria-hidden="true"></span>
+            BMC客制化
+        </button>
+        <button id="fru_button" type="button" class="btn btn-adn">
+            <span class="glyphicon glyphicon-sort-by-order" aria-hidden="true"></span>
+            FRU客制化
         </button>
     </div>
     <table id="bios" class="table table-hover" width="95%" align="center" style=" word-break:break-all;"></table>
@@ -15,31 +23,20 @@
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                             aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">选择BIOS版本</h4>
+                    <h4 class="modal-title" id="myModalLabel">请输入FRU信息</h4>
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="txt_name">BIOS名称</label>
-                        <input type="text" name="txt_statu" class="form-control" id="user_name"
-                               placeholder="user_name">
-                    </div>
-                    <div class="form-group">
-                        <label>
-                            <select class="selectpicker" data-style="btn-primary">
-                                <option value="1">BIOS1</option>
-                                <option value="2">BIOS2</option>
-                                <option value="3">BIOS3</option>
-                                <option value="4">BIOS4</option>
-                                <option value="5">BIOS5</option>
-                            </select>
-                        </label>
+                        <label for="txt_name">FRU SN</label>
+                        <input type="text" name="txt_statu" class="form-control" id="fru_msg"
+                               placeholder="FRU">
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" id="user_close" class="btn btn-default" data-dismiss="modal"><span
+                    <button type="button" id="fru_close" class="btn btn-default" data-dismiss="modal"><span
                             class="glyphicon glyphicon-remove" aria-hidden="true"></span>关闭
                     </button>
-                    <button type="button" id="user_submit" class="btn btn-primary"><span
+                    <button type="button" id="fru_submit" class="btn btn-primary"><span
                             class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>保存
                     </button>
                 </div>

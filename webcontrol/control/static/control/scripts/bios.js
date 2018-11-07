@@ -3,12 +3,13 @@ $(document).ready(function () {
     var oFileTable = new FileTableInit();
     oFileTable.Init();
     addclass();
+    buttonStart();
 });
 
 
 function addclass() {
- $('#tv').addClass('active');
- $("#tv1").addClass('active')
+    $('#tv').addClass('active');
+    $("#tv1").addClass('active')
 }
 
 var FileTableInit = function () {
@@ -28,7 +29,7 @@ var FileTableInit = function () {
             queryParams: oFileTableInit.queryParams,//传递参数（*）
             sidePagination: "server",           //分页方式：client客户端分页，server服务端分页（*）
             pageNumber: 1,                       //初始化加载第一页，默认第一页
-            pageSize: 10,                       //每页的记录行数（*）
+            pageSize: 25,                       //每页的记录行数（*）
             pageList: [10, 25, 50, 100],        //可供选择的每页的行数（*）
             search: true,                       //是否显示表格搜索，此搜索是客户端搜索，不会进服务端，所以，个人感觉意义不大
             searchOnEnterKey: true,
@@ -48,14 +49,14 @@ var FileTableInit = function () {
             rowStyle: function (row, index) {
                 //这里有5个取值代表5中颜色['active', 'success', 'info', 'warning', 'danger'];
                 var strclass = "";
-                if (row.mechineSensor <= 75) {
+                if (row.exec_state == "sucess") {
                     strclass = 'success';//还有一个active
                 }
-                else if (row.mechineSensor >= 75) {
+                else if (row.exec_state == "fail") {
                     strclass = 'warning';
                 }
                 else {
-                    return {};
+                    strclass = "info";
                 }
                 return {classes: strclass}
             },
@@ -66,6 +67,10 @@ var FileTableInit = function () {
                 title: 'ID',
                 sortable: true,
                 visible: false
+            }, {
+                field: 'ip',
+                title: 'IP',
+                sortable: true,
             }, {
                 field: 'sn',
                 title: 'SN',
@@ -95,13 +100,17 @@ var FileTableInit = function () {
                 field: 'bios',
                 title: 'BIOS',
                 sortable: true
-            },{
+            }, {
                 field: 'bmc',
                 title: 'BMC',
                 sortable: true
-            },{
+            }, {
                 field: 'stress_test',
                 title: '运行状态',
+                sortable: true
+            },{
+                field: 'exec_state',
+                title: '执行状态',
                 sortable: true
             },],
         });
@@ -119,3 +128,95 @@ var FileTableInit = function () {
     };
     return oFileTableInit;
 };
+
+
+function buttonStart() {
+    let url = "/control/mkexec";
+    $("#bios_button").click(function () {
+            let table = $("#bios").bootstrapTable('getSelections');
+            if (table.length <= 0) {
+                toastr.error("请选择需要执行的设备")
+            }
+            else {
+                $.ajax({
+                    type: "post",
+                    url: url,
+                    data: {"state": "bios", "msg": JSON.stringify(table)},
+                    success: function (data, status) {
+                        if (status === "success") {
+                            toastr.success('BIOS Execute sucess!');
+                            $("#bios").bootstrapTable('refresh');
+                        }
+
+                    },
+                    error: function () {
+                        toastr.error('BIOS Execute Error!');
+                    }
+                })
+            }
+        }
+    );
+
+    $("#bmc_button").click(function () {
+            let table = $("#bios").bootstrapTable('getSelections');
+            if (table.length <= 0) {
+                toastr.error("请选择需要执行的设备")
+            }
+            else {
+                $.ajax({
+                    type: "post",
+                    url: url,
+                    data: {"state": "bmc", "msg": JSON.stringify(table)},
+                    success: function (data, status) {
+                        if (status === "success") {
+                            toastr.success('BMC Execute sucess!');
+                            $("#bios").bootstrapTable('refresh');
+                        }
+
+                    },
+                    error: function () {
+                        toastr.error('BMC Execute Error!');
+                    }
+                })
+            }
+        }
+    );
+
+    $("#fru_button").click(function () {
+        let table = $("#bios").bootstrapTable('getSelections');
+        if (table.length <= 0) {
+            toastr.error("请选择需要执行的设备")
+        } else {
+            $('#myModal').modal();
+            $("#myModal").find("#fru_msg").val("");
+            let data = JSON.stringify(table);
+            $("#fru_submit").click(function () {
+                    let fru_msg = $("#fru_msg").val();
+                    if (fru_msg.length <= 0) {
+                        // console.log(data);
+                        toastr.error("请输入FRU信息");
+                        return;
+                    }
+                    let bios = $(".selectpicker").val();
+                    console.log(bios);
+                    $("#fru_close").click();
+                    $.ajax({
+                        type: "post",
+                        url: url,
+                        data: {"state": "fru", "msg": data},
+                        success: function (data, status) {
+                            if (status === "success") {
+                                toastr.success('FRU Execute sucess!');
+                                $("#bios").bootstrapTable('refresh');
+                            }
+
+                        },
+                        error: function () {
+                            toastr.error('FRU Execute Error!');
+                        }
+                    })
+                }
+            )
+        }
+    })
+}

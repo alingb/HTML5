@@ -61,14 +61,14 @@
                 {#                {% endblock %}#}
                 {% block treeview %}
                     <li id='tv' class="treeview">
-                        <a href="#"><i class="fa fa-calendar"></i> <span>客制化管理</span>
+                        <a href="#"><i class="fa fa-calendar"></i> <span>控制管理</span>
                             <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li id="tv1"><a href="/control/bios"><i class="fa fa-calendar-check-o"></i>BIOS</a></li>
-                            <li id="tv2"><a href="/control/ipmi"><i class="fa fa-calendar-check-o"></i>IPMI</a></li>
+                            <li id="tv1"><a href="/control/bios"><i class="fa fa-calendar-check-o"></i>客制化</a></li>
+                            <li id="tv2"><a href="/control/execute"><i class="fa fa-calendar-check-o"></i>老化程序</a></li>
                         </ul>
                     </li>
                 {% endblock treeview %}
@@ -97,7 +97,6 @@
 <script src="{% static "control/scripts/tableExport.js" %}"></script>
 <script src="{% static "control/scripts/toastr.min.js" %}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.3/js/bootstrap-select.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.3/js/i18n/defaults-*.min.js"></script>
 {% block script %}
 {% endblock script %}
 </body>
